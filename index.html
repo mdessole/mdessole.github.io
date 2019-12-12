@@ -144,7 +144,23 @@ doi = "https://doi.org/10.1016/j.camwa.2018.10.037",
 url = "http://www.sciencedirect.com/science/article/pii/S0898122118306345",
 author = "M. Dessole and F. Marcuzzi",
 keywords = "GPGPU, Finite elements, Variable density Navier–Stokes, ILU preconditioning",
-abstract = "In this work we investigate the numerical difficulties that arise in optimizing the efficiency of Newtonian fluids simulations on a massively parallel computing hardware like a GPU. In particular, we will concentrate on the resulting algebraic problem. We will present an approximate, fully-iterative, ILU preconditioner and we will show that this solution is very efficient on a GPU if compared with an intrinsic massively parallel preconditioner like the diagonal preconditioner, which indeed goes faster than more robust techniques, like ILU, despite their strong decrease in the number of iterations. We refer to GMRES as the iterative scheme used to solve the linear system. In particular, we will deal with the solution of incompressible flows with variable density and we will investigate the interplay between Reynolds and Atwood numbers. We will show that the numerical simulation at medium–high Reynolds numbers produces linear systems whose matrices can be reasonably preconditioned with the diagonal preconditioner, while at low Reynolds numbers the higher viscosity of the fluid makes the diagonal preconditioner ineffective in the solution time requested from GMRES and, decreasing the Reynolds number, unable to let GMRES converge at all. In this situation, we will show how an adequate iterative approach to the parallel solution of the triangular systems that result from the ILU preconditioning, turns out to be robust and efficient. We will show numerical results for variable-density fluids, discretized with the scheme described in Calgaro et al. (2008), in classical benchmarks and, in particular, in the well-known Rayleigh–Taylor instability."
+abstract = "In this work we investigate the numerical difficulties that arise in optimizing 
+the efficiency of Newtonian fluids simulations on a massively parallel computing hardware like a GPU. 
+In particular, we will concentrate on the resulting algebraic problem. We will present an approximate, 
+fully-iterative, ILU preconditioner and we will show that this solution is very efficient on a GPU if 
+compared with an intrinsic massively parallel preconditioner like the diagonal preconditioner, which 
+indeed goes faster than more robust techniques, like ILU, despite their strong decrease in the number 
+of iterations. We refer to GMRES as the iterative scheme used to solve the linear system. In particular, 
+we will deal with the solution of incompressible flows with variable density and we will investigate the 
+interplay between Reynolds and Atwood numbers. We will show that the numerical simulation at medium–high 
+Reynolds numbers produces linear systems whose matrices can be reasonably preconditioned with the diagonal 
+preconditioner, while at low Reynolds numbers the higher viscosity of the fluid makes the diagonal 
+preconditioner ineffective in the solution time requested from GMRES and, decreasing the Reynolds number, 
+unable to let GMRES converge at all. In this situation, we will show how an adequate iterative 
+approach to the parallel solution of the triangular systems that result from the ILU preconditioning, 
+turns out to be robust and efficient. We will show numerical results for variable-density fluids, 
+discretized with the scheme described in Calgaro et al. (2008), in classical benchmarks and, in particular, 
+in the well-known Rayleigh–Taylor instability."
 }
 </pre>
           </div>
@@ -154,41 +170,17 @@ abstract = "In this work we investigate the numerical difficulties that arise in
   <li>
       <div class="paper">
           <div class="paper-author">
-              A. Achille, S. Soatto
+              M. Dessole, F.Marcuzzi
           </div>
           <div class="paper-title">
-              Where is the Information in a Deep Neural Network?
+              A massively-parallel algorithm for Bordered Almost Block Diagonal systems on GPUs
           </div>
 
           <div class="paper-journal">
-              arXiv preprint
+              Submitted Manuscript
           </div>
 
-          <div class="paper-links">
-          <!-- <small> -->
-            [ <a role="button" href="https://arxiv.org/pdf/1905.12213">arXiv</a>,
-            <a type="button" data-toggle="collapse" href="#bibTex1">bibTeX</a> ]
-          <!-- </small> -->
-          </div>
-
-          <div class="bibTeX collapse" id="bibTex1">
-          <pre>@ARTICLE{achille2019where,
-     author = {{Achille}, Alessandro and {Soatto}, Stefano},
-      title = &#34;{Where is the Information in a Deep Neural Network?}&#34;,
-    journal = {arXiv e-prints},
-   keywords = {Computer Science - Machine Learning, Computer Science - Artificial Intelligence, Computer Science - Information Theory, Statistics - Machine Learning},
-       year = &#34;2019&#34;,
-      month = &#34;May&#34;,
-        eid = {arXiv:1905.12213},
-      pages = {arXiv:1905.12213},
-archivePrefix = {arXiv},
-     eprint = {1905.12213},
-primaryClass = {cs.LG},
-     adsurl = {https://ui.adsabs.harvard.edu/abs/2019arXiv190512213A},
-    adsnote = {Provided by the SAO/NASA Astrophysics Data System}
-}
-</pre>
-          </div>
+         
       </div>
   </li>
 
