@@ -114,31 +114,37 @@
     <li>
       <div class="paper">
           <div class="paper-author">
-              A. Golatkar, A. Achille, S. Soatto
+              M. Dessole, F. Marcuzzi
           </div>
           <div class="paper-title">
-              Eternal Sunshine of the Spotless Net: Selective Forgetting in Deep Neural Networks
+              Fully iterative ILU preconditioning of the unsteady Navier-Stokes equations for GPGPU
           </div>
 
           <div class="paper-journal">
-              arXiv preprint
+              Computers & Mathematics with Applications
           </div>
 
           <div class="paper-links">
           <!-- <small> -->
-            [ <a role="button" href="https://arxiv.org/abs/1911.04933">arXiv</a>,
+            [ <a role="button" href="https://www.sciencedirect.com/science/article/pii/S0898122118306345">link</a>,
             <a type="button" data-toggle="collapse" href="#bibTex0">bibTeX</a> ]
           <!-- </small> -->
           </div>
 
           <div class="bibTeX collapse" id="bibTex0">
-          <pre>@misc{golatkar2019eternal,
-    title={Eternal Sunshine of the Spotless Net: Selective Forgetting in Deep Networks},
-    author={Aditya Golatkar and Alessandro Achille and Stefano Soatto},
-    year={2019},
-    eprint={1911.04933},
-    archivePrefix={arXiv},
-    primaryClass={cs.LG}
+          <pre>@article{DESSOLE2019907,
+title = "Fully iterative ILU preconditioning of the unsteady Navier–Stokes equations for GPGPU",
+journal = "Computers & Mathematics with Applications",
+volume = "77",
+number = "4",
+pages = "907 - 927",
+year = "2019",
+issn = "0898-1221",
+doi = "https://doi.org/10.1016/j.camwa.2018.10.037",
+url = "http://www.sciencedirect.com/science/article/pii/S0898122118306345",
+author = "M. Dessole and F. Marcuzzi",
+keywords = "GPGPU, Finite elements, Variable density Navier–Stokes, ILU preconditioning",
+abstract = "In this work we investigate the numerical difficulties that arise in optimizing the efficiency of Newtonian fluids simulations on a massively parallel computing hardware like a GPU. In particular, we will concentrate on the resulting algebraic problem. We will present an approximate, fully-iterative, ILU preconditioner and we will show that this solution is very efficient on a GPU if compared with an intrinsic massively parallel preconditioner like the diagonal preconditioner, which indeed goes faster than more robust techniques, like ILU, despite their strong decrease in the number of iterations. We refer to GMRES as the iterative scheme used to solve the linear system. In particular, we will deal with the solution of incompressible flows with variable density and we will investigate the interplay between Reynolds and Atwood numbers. We will show that the numerical simulation at medium–high Reynolds numbers produces linear systems whose matrices can be reasonably preconditioned with the diagonal preconditioner, while at low Reynolds numbers the higher viscosity of the fluid makes the diagonal preconditioner ineffective in the solution time requested from GMRES and, decreasing the Reynolds number, unable to let GMRES converge at all. In this situation, we will show how an adequate iterative approach to the parallel solution of the triangular systems that result from the ILU preconditioning, turns out to be robust and efficient. We will show numerical results for variable-density fluids, discretized with the scheme described in Calgaro et al. (2008), in classical benchmarks and, in particular, in the well-known Rayleigh–Taylor instability."
 }
 </pre>
           </div>
