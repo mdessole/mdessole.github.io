@@ -148,28 +148,27 @@
           <!-- </small> -->
           </div>
 
-          <div class="bibTeX collapse" id="bibTex2">
+          <div class="bibTeX collapse" id="bibTex1">
           <pre>@article{DESSOLE2020,
-title = "Accelerating the Lawson-Hanson NNLS solver for large-scale Tchakaloff regression designs",
-journal = "Dolomites Research Notes on Approximation",
-volume = "13",
-issue = "1",
-pages = "20 - 29",
-year = "2020",
-issn = "2035-6803",
-url = "https://drna.padovauniversitypress.it/2020/1/3",
-author = "	Dessole, M., Marcuzzi, F., Vianello, M.",
-keywords = "Lawson-Hanson active set method, near-optimal regression designs, NonNegative Least Squares, 
-sparse recovery, Tchakaloff compression",
-abstract = "We deal with the problem of computing near G-optimal compressed designs 
-for high-degree polynomial regression on fine discretizations of 2d and 3d regions of arbitrary shape. 
-The key tool is Tchakaloff-like compression of discrete probability measures, via an improved version 
-of the Lawson-Hanson NNLS solver for the corresponding full and large-scale underdetermined moment system, 
-that can have for example a size order of $10^3$ (basis polynomials) $\times \ 10^4$ (nodes)."
-}
-</pre>
+                title = "Accelerating the Lawson-Hanson NNLS solver for large-scale Tchakaloff regression designs",
+                journal = "Dolomites Research Notes on Approximation",
+                volume = "13",
+                issue = "1",
+                pages = "20 - 29",
+                year = "2020",
+                issn = "2035-6803",
+                url = "https://drna.padovauniversitypress.it/2020/1/3",
+                author = "	Dessole, M., Marcuzzi, F., Vianello, M.",
+                keywords = "Lawson-Hanson active set method, near-optimal regression designs, NonNegative Least Squares, 
+                sparse recovery, Tchakaloff compression",
+                abstract = "We deal with the problem of computing near G-optimal compressed designs 
+                for high-degree polynomial regression on fine discretizations of 2d and 3d regions of arbitrary shape. 
+                The key tool is Tchakaloff-like compression of discrete probability measures, via an improved version 
+                of the Lawson-Hanson NNLS solver for the corresponding full and large-scale underdetermined moment system, 
+                that can have for example a size order of $10^3$ (basis polynomials) $\times \ 10^4$ (nodes)."
+                }
+          </pre>
           </div>
-         
       </div>
   </li>
         
@@ -196,38 +195,38 @@ that can have for example a size order of $10^3$ (basis polynomials) $\times \ 1
 
           <div class="bibTeX collapse" id="bibTex0">
           <pre>@article{DESSOLE2019907,
-title = "Fully iterative ILU preconditioning of the unsteady Navier–Stokes equations for GPGPU",
-journal = "Computers & Mathematics with Applications",
-volume = "77",
-number = "4",
-pages = "907 - 927",
-year = "2019",
-issn = "0898-1221",
-doi = "https://doi.org/10.1016/j.camwa.2018.10.037",
-url = "http://www.sciencedirect.com/science/article/pii/S0898122118306345",
-author = "M. Dessole and F. Marcuzzi",
-keywords = "GPGPU, Finite elements, Variable density Navier–Stokes, ILU preconditioning",
-abstract = "In this work we investigate the numerical difficulties that arise in optimizing 
-the efficiency of Newtonian fluids simulations on a massively parallel computing hardware like a GPU. 
-In particular, we will concentrate on the resulting algebraic problem. We will present an approximate, 
-fully-iterative, ILU preconditioner and we will show that this solution is very efficient on a GPU if 
-compared with an intrinsic massively parallel preconditioner like the diagonal preconditioner, which 
-indeed goes faster than more robust techniques, like ILU, despite their strong decrease in the number 
-of iterations. We refer to GMRES as the iterative scheme used to solve the linear system. In particular, 
-we will deal with the solution of incompressible flows with variable density and we will investigate the 
-interplay between Reynolds and Atwood numbers. We will show that the numerical simulation at medium–high 
-Reynolds numbers produces linear systems whose matrices can be reasonably preconditioned with the diagonal 
-preconditioner, while at low Reynolds numbers the higher viscosity of the fluid makes the diagonal 
-preconditioner ineffective in the solution time requested from GMRES and, decreasing the Reynolds number, 
-unable to let GMRES converge at all. In this situation, we will show how an adequate iterative 
-approach to the parallel solution of the triangular systems that result from the ILU preconditioning, 
-turns out to be robust and efficient. We will show numerical results for variable-density fluids, 
-discretized with the scheme described in Calgaro et al. (2008), in classical benchmarks and, in particular, 
-in the well-known Rayleigh–Taylor instability."
-}
-</pre>
-          </div>
-      </div>
+                title = "Fully iterative ILU preconditioning of the unsteady Navier–Stokes equations for GPGPU",
+                journal = "Computers & Mathematics with Applications",
+                volume = "77",
+                number = "4",
+                pages = "907 - 927",
+                year = "2019",
+                issn = "0898-1221",
+                doi = "https://doi.org/10.1016/j.camwa.2018.10.037",
+                url = "http://www.sciencedirect.com/science/article/pii/S0898122118306345",
+                author = "M. Dessole and F. Marcuzzi",
+                keywords = "GPGPU, Finite elements, Variable density Navier–Stokes, ILU preconditioning",
+                abstract = "In this work we investigate the numerical difficulties that arise in optimizing 
+                the efficiency of Newtonian fluids simulations on a massively parallel computing hardware like a GPU. 
+                In particular, we will concentrate on the resulting algebraic problem. We will present an approximate, 
+                fully-iterative, ILU preconditioner and we will show that this solution is very efficient on a GPU if 
+                compared with an intrinsic massively parallel preconditioner like the diagonal preconditioner, which 
+                indeed goes faster than more robust techniques, like ILU, despite their strong decrease in the number 
+                of iterations. We refer to GMRES as the iterative scheme used to solve the linear system. In particular, 
+                we will deal with the solution of incompressible flows with variable density and we will investigate the 
+                interplay between Reynolds and Atwood numbers. We will show that the numerical simulation at medium–high 
+                Reynolds numbers produces linear systems whose matrices can be reasonably preconditioned with the diagonal 
+                preconditioner, while at low Reynolds numbers the higher viscosity of the fluid makes the diagonal 
+                preconditioner ineffective in the solution time requested from GMRES and, decreasing the Reynolds number, 
+                unable to let GMRES converge at all. In this situation, we will show how an adequate iterative 
+                approach to the parallel solution of the triangular systems that result from the ILU preconditioning, 
+                turns out to be robust and efficient. We will show numerical results for variable-density fluids, 
+                discretized with the scheme described in Calgaro et al. (2008), in classical benchmarks and, in particular, 
+                in the well-known Rayleigh–Taylor instability."
+                }
+        </pre>
+        </div>
+  </div>
   </li>
 
     </ul>
