@@ -1,4 +1,3 @@
-% 11/06/2020
 function [pts,w, momerr] = dCATCH(deg,X,u,LHDM_options)
 
 % Caratheodory-Tchakaloff d-variate discrete measure compression  
@@ -17,6 +16,9 @@ function [pts,w, momerr] = dCATCH(deg,X,u,LHDM_options)
 % pts: d-column array of extracted mass points coordinates
 % w: 1-column array of corresponding new positive weights 
 % momerr: moment reconstruction error
+
+% 11/06/2020 
+% M. Dessole, F. Marcuzzi, M. Vianello
 
 % FUNCTION BODY 
 

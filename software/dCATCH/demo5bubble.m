@@ -1,4 +1,6 @@
 % 11/06/2020
+% M. Dessole, F. Marcuzzi, M. Vianello
+
 clear all;
 
 % initializing regression degree

@@ -1,4 +1,3 @@
-% 11/06/2020
 function [cpts,cw,geff,momerr] = dNORD(deg,X,gefftol,maxit,LHDM_options)
 
 % computes a Near Optimal Regression Design with a given G-efficiency on   
@@ -17,6 +16,8 @@ function [cpts,cw,geff,momerr] = dNORD(deg,X,gefftol,maxit,LHDM_options)
 % geff: G-efficiency of the output design 
 % momerr: moment reconstruction error by the compressed measure
 
+% 11/06/2020 
+% M. Dessole, F. Marcuzzi, M. Vianello
 
 % FUNCTION BODY 
 

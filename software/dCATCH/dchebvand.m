@@ -1,5 +1,4 @@
-% 11/06/2020
-function V = dchebvand(n,X)
+function V = dCHEBVAND(n,X)
 
 % computes the Chebyshev-Vandermonde matrix for degree n on a d-dim mesh X
 
@@ -9,6 +8,9 @@ function V = dchebvand(n,X)
 
 % output
 % V: Chebyshev-Vandermonde matrix for degree n on the mesh X  
+
+% 11/06/2020 
+% M. Dessole, F. Marcuzzi, M. Vianello
 
 % FUNCTION BODY
 
