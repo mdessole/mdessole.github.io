@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 function [pts,w, momerr] = dCATCH(deg,X,u,LHDM_options)
 
 % Caratheodory-Tchakaloff d-variate discrete measure compression  
