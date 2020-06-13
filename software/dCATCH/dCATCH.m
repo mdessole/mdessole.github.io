@@ -44,17 +44,7 @@ else
 
     % new moments 
     orthmom=Q'*u;
-    
-    
-    if  isfield(LHDM_options,'lsqnonneg')
-        if (LHDM_options.lsqnonneg == 1)
-            [pts, w, momerr, ~]= NNLS(X, u, U, Q, orthmom, LHDM_options);
-        else
-            [pts, w, momerr, ~]= NNLS(X, u, U, Q, orthmom, LHDM_options);
-        end
-    else
-        [pts, w, momerr, ~]= NNLS(X, u, U, Q, orthmom, LHDM_options);
-    end 
+    [pts, w, momerr, ~]= NNLS(X, u, U, Q, orthmom, LHDM_options);
 
 end
 
