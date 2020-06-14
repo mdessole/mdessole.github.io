@@ -13,9 +13,11 @@ dim = 3;
 tol=0.99;
 maxit=10000;
 
-% generate initial measure support and its cartinality according parameters
-[pts,m] = dCHEBNODES(n,4,dim);
+% enable prints
+verbose = 1;
 
+% generate initial measure support and its cartinality according parameters
+[pts,m] = dCHEBNODES(n,4,dim,verbose);
 
 % Lawson Hanson parameters
 LHDM_options = struct( 'lsqnonneg', false, ... % NNLS is solved by Matlab's lsqnonneg when true, by LHDM otherwise
@@ -26,15 +28,15 @@ LHDM_options = struct( 'lsqnonneg', false, ... % NNLS is solved by Matlab's lsqn
 
 
 % run test
-[cpts,cw,geff,momerr]=dNORD(n,pts,tol,maxit, LHDM_options);
+[cpts,cw,geff,momerr]=dNORD(n,pts,tol,maxit,LHDM_options,verbose);
 
 
 function [pts, m] = dCHEBNODES(n,k,dim)
-
-    fprintf("**********************************\n");
-    fprintf("%d-dim Chebyshev test, k=%d, n=%d \n", dim, k, n);
-    fprintf("**********************************\n");
-
+    if verbose
+        fprintf("**********************************\n");
+        fprintf("%d-dim Chebyshev test, k=%d, n=%d \n", dim, k, n);
+        fprintf("**********************************\n");
+    end
     m = 2*k*n;
 
     pts1 = cos((2*(1:m)-1)*pi/(2*m));

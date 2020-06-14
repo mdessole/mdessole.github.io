@@ -13,6 +13,9 @@ dim = 3;
 tol=0.95;
 maxit=10000;
 
+% enable prints
+verbose = 1;
+
 %certer points of 5-bubble
 X=[3 3 3; 1 1 1; -1 4 -1; 0 2 -3; -3 3 2.5];
 %radii of 5-bubble
@@ -20,7 +23,7 @@ r = [2;3;2.5;1;1.5];
 % generate initial measure support inside the 5-bubble
 % starting from m Halton points
 m = 40^3;
-[pts] = multibubble(X,r,m,dim);
+[pts] = multibubble(X,r,m,dim,verbose);
 
 
 % Lawson Hanson parameters
@@ -32,14 +35,14 @@ LHDM_options = struct( 'lsqnonneg', false, ... % NNLS is solved by Matlab's lsqn
 
 
 % run test
-[cpts,cw,geff,momerr]=dNORD(n,pts,tol,maxit, LHDM_options);
+[cpts,cw,geff,momerr]=dNORD(n,pts,tol,maxit, LHDM_options,verbose);
 
-function [pts] = multibubble(X,r,m,dim)
-
-    fprintf("**********************************\n");
-    fprintf("%d %d-dim multiball test \n", m, dim);
-    fprintf("**********************************\n");
-
+function [pts] = multibubble(X,r,m,dim,verbose)
+    if verbose
+        fprintf("**********************************\n");
+        fprintf("%d %d-dim multiball test \n", m, dim);
+        fprintf("**********************************\n");
+    end 
     pts = haltonseq(m,dim);
     %computing the minimal box
     a = min(X - repmat(r,1,dim),[],1); % d-dim array

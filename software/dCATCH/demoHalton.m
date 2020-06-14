@@ -16,8 +16,11 @@ dim = 10;
 tol=0.95;
 maxit=10000;
 
+% enable prints
+verbose = 1;
+
 % generate initial measure support
-pts = haltonpts(m,dim);
+pts = haltonpts(m,dim,verbose);
 
 % Lawson Hanson parameters
 LHDM_options = struct( 'lsqnonneg', false, ... % NNLS is solved by Matlab's lsqnonneg when true, by LHDM otherwise
@@ -28,14 +31,14 @@ LHDM_options = struct( 'lsqnonneg', false, ... % NNLS is solved by Matlab's lsqn
 
 
 % run test
-[cpts,cw,geff,momerr]=dNORD(n,pts,tol,maxit, LHDM_options);
+[cpts,cw,geff,momerr]=dNORD(n,pts,tol,maxit,LHDM_options,verbose);
 
 
-function [pts] = haltonpts(m,dim)
-
-    fprintf("**********************************\n");
-    fprintf("%d %d-dim Halton points test \n", m, dim);
-    fprintf("**********************************\n");
-
+function [pts] = haltonpts(m,dim,verbose)
+    if verbose
+        fprintf("**********************************\n");
+        fprintf("%d %d-dim Halton points test \n", m, dim);
+        fprintf("**********************************\n");
+    end
     pts = haltonseq(m,dim);
 end

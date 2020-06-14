@@ -1,4 +1,4 @@
-function [cpts,cw,geff,momerr] = dNORD(deg,X,gefftol,maxit,LHDM_options)
+function [cpts,cw,geff,momerr] = dNORD(deg,X,gefftol,maxit,LHDM_options,verbose)
 
 % computes a Near Optimal Regression Design with a given G-efficiency on   
 % a discrete d-dim set X, by a basic multiplicative algorithm and 
@@ -51,7 +51,7 @@ while go==1
 end
 
 % Caratheodory-Tchakaloff design compression 
-[cpts,cw,momerr]=dCATCH(2*deg,X,w,LHDM_options);
+[cpts,cw,momerr]=dCATCH(2*deg,X,w,LHDM_options,verbose);
 
 end
 

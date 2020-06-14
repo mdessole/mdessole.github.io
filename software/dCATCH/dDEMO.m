@@ -14,6 +14,9 @@ dim = 10;
 tol=0.95;
 maxit=10000;
 
+% enable prints
+verbose = 1;
+
 % generate initial measure support according to the chosen example 
 example = 1;
 if (example == 1)
@@ -45,7 +48,7 @@ LHDM_options = struct( 'lsqnonneg', false, ... % NNLS is solved by Matlab's lsqn
 
 
 % run test
-[cpts,cw,geff,momerr]=dNORD(n,pts,tol,maxit, LHDM_options);
+[cpts,cw,geff,momerr]=dNORD(n,pts,tol,maxit, LHDM_options, verbose);
 
 function [pts] = multiball(X,r,m,dim)
 

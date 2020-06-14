@@ -1,4 +1,4 @@
-function [x,resnorm,exitflag, outeriter] = LHDM(C,d,options) %thres,thres_w,k)
+function [x,resnorm,exitflag, outeriter] = LHDM(C,d,options,verbose) 
 
 % LHDM solves underdetermined linear least squares with nonnegativity constraints
 % using classic Lawson-Hanson algorithm accelerated by Deviation Maximization.
@@ -101,13 +101,19 @@ if ~isempty(options)
                P(tmp) = false;
                Z(tmp) = true;
             end
-            fprintf("LHDM(%d) with ULS inizialization\n", k);
+            if verbose
+                fprintf("LHDM(%d) with ULS inizialization\n", k);
+            end
             cardP = sum(P);
         else
-            fprintf("LHDM(%d) \n", k);
+            if verbose
+                fprintf("LHDM(%d) \n", k);
+            end
         end   
     else
-        fprintf("LHDM(%d) \n", k);
+        if verbose
+            fprintf("LHDM(%d) \n", k);
+        end
     end
 else
     thres   = 0.2222;
@@ -115,7 +121,9 @@ else
     k = ceil(m/20); 
     tol = 10*eps*norm(C,1)*length(C);
     LHDMflag = 1;
-    fprintf("LHDM(%d) \n", k);
+    if verbose
+        fprintf("LHDM(%d) \n", k);
+    end
 end
     
 
@@ -208,7 +216,6 @@ end
 resnorm = resid'*resid;
 
 end
-
 
 
 function [p] = DM(Cnorm, wz, k, thres,thres_w)
