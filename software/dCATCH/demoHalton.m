@@ -4,13 +4,13 @@
 clear all;
 
 % initializing regression degree
-n = 2;
+n = 5;
 
 % choose cardinality of the initial measure support
-m = 10000;
+m = 100000;
 
 %number of variables 
-dim = 10;
+dim = 4;
 
 % initializing G-efficiency and max iterations
 tol=0.95;
@@ -36,9 +36,9 @@ LHDM_options = struct( 'lsqnonneg', false, ... % NNLS is solved by Matlab's lsqn
 
 function [pts] = haltonpts(m,dim,verbose)
     if verbose
-        fprintf("**********************************\n");
-        fprintf("%d %d-dim Halton points test \n", m, dim);
-        fprintf("**********************************\n");
+        fprintf('**********************************\n');
+        fprintf('%d %d-dim Halton points test \n', m, dim);
+        fprintf('**********************************\n');
     end
     pts = haltonseq(m,dim);
 end

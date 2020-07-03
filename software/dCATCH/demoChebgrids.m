@@ -4,10 +4,10 @@
 clear all;
 
 % initializing regression degree
-n = 6;
+n = 2;
 
 %number of variables 
-dim = 3;
+dim = 5;
 
 % initializing G-efficiency and max iterations
 tol=0.99;
@@ -31,11 +31,11 @@ LHDM_options = struct( 'lsqnonneg', false, ... % NNLS is solved by Matlab's lsqn
 [cpts,cw,geff,momerr]=dNORD(n,pts,tol,maxit,LHDM_options,verbose);
 
 
-function [pts, m] = dCHEBNODES(n,k,dim)
+function [pts, m] = dCHEBNODES(n,k,dim, verbose)
     if verbose
-        fprintf("**********************************\n");
-        fprintf("%d-dim Chebyshev test, k=%d, n=%d \n", dim, k, n);
-        fprintf("**********************************\n");
+        fprintf('**********************************\n');
+        fprintf('%d-dim Chebyshev test, k=%d, n=%d \n', dim, k, n);
+        fprintf('**********************************\n');
     end
     m = 2*k*n;
 

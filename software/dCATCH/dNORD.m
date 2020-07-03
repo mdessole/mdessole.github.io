@@ -27,13 +27,14 @@ w=ones(M,1)/M;
 
 nit=0; go=1;
 
+tic;
 % multiplicative iteration up to the given G-efficiency 
 while go==1
     nit=nit+1;
     if nit==1 
         [U,jvec]=dORTHVAND(deg,X,w);
         % dimension of the polynomial space on X 
-        rk=length(U(:,1));
+        rk=length(jvec);
     else
         U=dORTHVAND(deg,X,w,jvec);
     end
@@ -46,9 +47,11 @@ while go==1
     go=(geff<gefftol & nit<maxit);
     if go==1
         % updating the design
-        w=w.*K/N;
+        w=w.*K'/N;
     end
 end
+elapsed = toc;
+fprintf('Titterington iterations = %d, elapsed time = %.6f s \n', nit, elapsed);
 
 % Caratheodory-Tchakaloff design compression 
 [cpts,cw,momerr]=dCATCH(2*deg,X,w,LHDM_options,verbose);

@@ -39,9 +39,9 @@ LHDM_options = struct( 'lsqnonneg', false, ... % NNLS is solved by Matlab's lsqn
 
 function [pts] = multibubble(X,r,m,dim,verbose)
     if verbose
-        fprintf("**********************************\n");
-        fprintf("%d %d-dim multiball test \n", m, dim);
-        fprintf("**********************************\n");
+        fprintf('**********************************\n');
+        fprintf('%d %d-dim multiball test \n', m, dim);
+        fprintf('**********************************\n');
     end 
     pts = haltonseq(m,dim);
     %computing the minimal box

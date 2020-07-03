@@ -27,12 +27,12 @@ function [pts,w, momerr] = dCATCH(deg,X,u,LHDM_options,verbose)
 U =dORTHVAND(deg,X,u);
 
 if verbose
-    fprintf("Vandermonde matrix's size = %d x %d \n", size(U,1), size(U,2));
+    fprintf('Vandermonde matrix size = %d x %d \n', size(U,1), size(U,2));
 end
 %if length(U(1,:))<=length(X(1,:))
 if size(U,1)<=size(U,2)
     if verbose
-        fprintf("Vandermonde matrix is not underdetermined, nothing to compress \n");
+        fprintf('Vandermonde matrix is not underdetermined, nothing to compress \n');
     end
     % no compression expected  
     pts=X;
@@ -59,7 +59,7 @@ function [pts, w, momerr, e]= NNLS(X, u, U, Q, orthmom, options, verbose)
     if  isfield(options,'lsqnonneg')
         if options.lsqnonneg
             if verbose
-                fprintf("Matlab's lsqnonneg \n");
+                fprintf('Matlab lsqnonneg \n');
             end
             [weights,~,~,~,output] = lsqnonneg(Q',orthmom); 
             iter = output.iterations;
@@ -82,8 +82,8 @@ function [pts, w, momerr, e]= NNLS(X, u, U, Q, orthmom, options, verbose)
 
     % displaying results
     if verbose
-        fprintf('number of outer iterations = %d \n', iter);
-        fprintf('elapsed time = %.6f \n', e);
+        fprintf('NNLS number of outer iterations = %d \n', iter);
+        fprintf('NNLS elapsed time = %.6f s  \n', e);
         fprintf('initial design cardinality = %4.0f \n',size(X,1));
         fprintf('concentrated support cardinality = %4.0f \n',length(w));
         fprintf('compression ratio = %4.0f \n',size(X,1)/length(w));

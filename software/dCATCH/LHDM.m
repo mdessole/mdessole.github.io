@@ -102,17 +102,17 @@ if ~isempty(options)
                Z(tmp) = true;
             end
             if verbose
-                fprintf("LHDM(%d) with ULS inizialization\n", k);
+                fprintf('LHDM(%d) with ULS inizialization\n', k);
             end
             cardP = sum(P);
         else
             if verbose
-                fprintf("LHDM(%d) \n", k);
+                fprintf('LHDM(%d) \n', k);
             end
         end   
     else
         if verbose
-            fprintf("LHDM(%d) \n", k);
+            fprintf('LHDM(%d) \n', k);
         end
     end
 else
@@ -122,7 +122,7 @@ else
     tol = 10*eps*norm(C,1)*length(C);
     LHDMflag = 1;
     if verbose
-        fprintf("LHDM(%d) \n", k);
+        fprintf('LHDM(%d) \n', k);
     end
 end
     
