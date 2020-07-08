@@ -34,12 +34,11 @@ while go==1
     if nit==1 
         [U,jvec]=dORTHVAND(deg,X,w);
         % dimension of the polynomial space on X 
-        rk=length(jvec);
+        N=length(jvec);
     else
         U=dORTHVAND(deg,X,w,jvec);
     end
-    % updating the design  
-    N=rk;
+    % updating the design 
     K=sum((U.*U)');
     % computing G-efficiency of the design  
     geff=N/max(K);
