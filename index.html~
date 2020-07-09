@@ -110,9 +110,7 @@
 <a href="https://learn.eduopen.org/eduopenv2/pathway_details.php?specialid=57"> MOOC: Scientific Computing in Python</a> (in Italian)
 
     
-<h3>Software</h3>
-<a href="./dcatch.html"> dCATCH</a> 
-<a href="https://github.com/mdessole/ns2div"> ns2div</a> 
+<h3><a href="./software"> Software</a></h3>
 
 
 <h3>Publications</h3>
@@ -120,50 +118,7 @@
 <div id="publications-row" class="row">
     <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12">
     <ul class="publications-list">
- 
- <li>
-      <div class="paper">
-          <div class="paper-author">
-              M. Dessole, F. Marcuzzi
-          </div>
-          <div class="paper-title">
-              dCATCH-A Numerical Package for d-Variate Near G-Optimal Tchakaloff Regression via Fast NNLS
-          </div>
-
-          <div class="paper-journal">
-              Mathematics, 2020
-          </div>
-    
-           <div class="paper-links">
-          <!-- <small> -->
-            [ <a role="button" href="https://www.mdpi.com/2227-7390/8/7/1122">link</a>,
-            <a type="button" data-toggle="collapse" href="#bibTex3">bibTeX</a> ]
-          <!-- </small> -->
-          </div>
-
-          <div class="bibTeX collapse" id="bibTex3">
-          <pre>@article{DMa20NA,
-                title = "dCATCH---A Numerical Package for d-Variate Near G-Optimal Tchakaloff Regression via Fast NNLS",
-                journal = "Mathematics",
-                year = "2020",
-	        month = "7",
-	        volume = "8",
-	        issue = "1122",
-                doi = " https://doi.org/10.3390/math8071122",
-                author = "Dessole, Monica and Marcuzzi, Fabio, and Vianello, Marco ",
-                keywords = "multivariate polynomial regression designs; G-optimality; D-optimality; multiplicative algorithms; G-efficiency; Caratheodory-Tchakaloff discrete measure compression; Non-Negative Least Squares; accelerated Lawson-Hanson solver",
-                abstract = "We provide a numerical package for the computation of a $d$-variate near G-optimal polynomial regression design of degree $m$ on a finite design space $X\subset \mathbb{R}^d$, by few iterations of a basic multiplicative algorithm followed by Tchakaloff-like compression of the discrete measure keeping the reached G-efficiency, via an accelerated version of the Lawson-Hanson {algorithm for Non-Negative Least Squares (NNLS) problems}.
-{This package can solve on a personal computer} large-scale problems where $card(X) \times \dim(P_{2m}^d)$ is up to $10^8$--$10^9$, being $\dim(P_{2m}^d)=\binom{2m+d}{d}=\binom{2m+d}{2m}$. Several numerical tests are presented 
-on complex shapes in $d=3$ and on hypercubes in $d>3$."
-                }
-          </pre>
-          </div>
-          
-         
-      </div>
-  </li>
-     
-
+  
      <li>
       <div class="paper">
           <div class="paper-author">
@@ -191,7 +146,7 @@ on complex shapes in $d=3$ and on hypercubes in $d>3$."
                 year = "2020",
                 issn = "1572-9265",
                 doi = "https://doi.org/10.1007/s11075-020-00931-8",
-                author = "Dessole, Monica and Marcuzzi, Fabio",
+                author = "	Dessole, M., Marcuzzi, F.",
                 keywords = "GPU, Parallel algorithms, BABD system, Batched routines, Optimal control, GPGPU computing",
                 abstract = "In this paper, we present PARASOF, an algorithm for the solution of linear systems with 
                 BABD matrices on massively parallel computing systems like graphic processing units or GPUs. This 
@@ -237,7 +192,7 @@ on complex shapes in $d=3$ and on hypercubes in $d>3$."
                 issn = "2035-6803",
                 doi = "http://dx.doi.org/10.14658/PUPJ-DRNA-2020-1-3",
                 url = "https://drna.padovauniversitypress.it/2020/1/3",
-                author = "Dessole, Monica and Marcuzzi, Fabio and Vianello, Marco",
+                author = "	Dessole, M., Marcuzzi, F., Vianello, M.",
                 keywords = "Lawson-Hanson active set method, near-optimal regression designs, NonNegative Least Squares, 
                 sparse recovery, Tchakaloff compression",
                 abstract = "We deal with the problem of computing near G-optimal compressed designs 
@@ -273,7 +228,7 @@ on complex shapes in $d=3$ and on hypercubes in $d>3$."
           </div>
 
           <div class="bibTeX collapse" id="bibTex0">
-          <pre>@article{DMa2019907,
+          <pre>@article{DESSOLE2019907,
                 title = "Fully iterative ILU preconditioning of the unsteady Navier–Stokes equations for GPGPU",
                 journal = "Computers & Mathematics with Applications",
                 volume = "77",
@@ -283,7 +238,7 @@ on complex shapes in $d=3$ and on hypercubes in $d>3$."
                 issn = "0898-1221",
                 doi = "https://doi.org/10.1016/j.camwa.2018.10.037",
                 url = "http://www.sciencedirect.com/science/article/pii/S0898122118306345",
-                author = "Dessole, Monica and Marcuzzi, Fabio",
+                author = "M. Dessole and F. Marcuzzi",
                 keywords = "GPGPU, Finite elements, Variable density Navier–Stokes, ILU preconditioning",
                 abstract = "In this work we investigate the numerical difficulties that arise in optimizing 
                 the efficiency of Newtonian fluids simulations on a massively parallel computing hardware like a GPU. 
