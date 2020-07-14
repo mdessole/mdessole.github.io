@@ -150,10 +150,17 @@
 	        issue = "1122",
                 doi = " https://doi.org/10.3390/math8071122",
                 author = "Dessole, Monica and Marcuzzi, Fabio, and Vianello, Marco ",
-                keywords = "multivariate polynomial regression designs; G-optimality; D-optimality; multiplicative algorithms; G-efficiency; Caratheodory-Tchakaloff discrete measure compression; Non-Negative Least Squares; accelerated Lawson-Hanson solver",
-                abstract = "We provide a numerical package for the computation of a $d$-variate near G-optimal polynomial regression design of degree $m$ on a finite design space $X\subset \mathbb{R}^d$, by few iterations of a basic multiplicative algorithm followed by Tchakaloff-like compression of the discrete measure keeping the reached G-efficiency, via an accelerated version of the Lawson-Hanson {algorithm for Non-Negative Least Squares (NNLS) problems}.
-{This package can solve on a personal computer} large-scale problems where $card(X) \times \dim(P_{2m}^d)$ is up to $10^8$--$10^9$, being $\dim(P_{2m}^d)=\binom{2m+d}{d}=\binom{2m+d}{2m}$. Several numerical tests are presented 
-on complex shapes in $d=3$ and on hypercubes in $d>3$."
+                keywords = "multivariate polynomial regression designs; G-optimality; D-optimality; multiplicative algorithms; 
+	        G-efficiency; Caratheodory-Tchakaloff discrete measure compression; Non-Negative Least Squares; 
+                accelerated Lawson-Hanson solver",
+                abstract = "We provide a numerical package for the computation of a $d$-variate near G-optimal polynomial 
+                regression design of degree $m$ on a finite design space $X\subset \mathbb{R}^d$, by few iterations 
+                of a basic multiplicative algorithm followed by Tchakaloff-like compression of the discrete measure 
+                keeping the reached G-efficiency, via an accelerated version of the Lawson-Hanson {algorithm for 
+                Non-Negative Least Squares (NNLS) problems}.
+                {This package can solve on a personal computer} large-scale problems where $card(X) \times \dim(P_{2m}^d)$ 
+                is up to $10^8$--$10^9$, being $\dim(P_{2m}^d)=\binom{2m+d}{d}=\binom{2m+d}{2m}$. Several numerical tests 
+	        are presented on complex shapes in $d=3$ and on hypercubes in $d>3$."
                 }
           </pre>
           </div>
