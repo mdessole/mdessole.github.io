@@ -15,8 +15,10 @@ function [U,jvec,Q,R] = dORTHVAND(deg,X,u,jvec,C)
 % U: Vandermode-like matrix in a u-orthogonal polynomial basis on X  
 % jvec: vector of column indexes, selects a polynomial basis (computed  
 % if the input jvec is empty)
-% Q:
-% R:
+% Q: orthogonal factor in the QR decomposition
+% diag(sqrt(u))*C(:,jvec)=Q*R where C=dCHEBVAND(n,X)
+% R: triangular factor in the QR decomposition
+% diag(sqrt(u))*C(:,jvec)=Q*R where C=dCHEBVAND(n,X)
 
 % 11/06/2020 
 % M. Dessole, F. Marcuzzi, M. Vianello
