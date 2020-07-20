@@ -6,19 +6,20 @@ function [U,jvec,Q,R] = dORTHVAND(deg,X,u,jvec,C)
 
 % input
 % deg: polynomial degree
-% X: d-column array of point coordinates 
-% u: 1-column array of nonnegative weights 
+% X: d-column array of point coordinates
+% u: 1-column array of nonnegative weights, or nonnegative scalar in
+%    case of equal weithgs
 % jvec (optional): vector of column indexes, selects a polynomial basis  
 % C (optional): Chebyshev-Vandermonde matrix on jvec basis
 
 % output
 % U: Vandermode-like matrix in a u-orthogonal polynomial basis on X  
 % jvec: vector of column indexes, selects a polynomial basis (computed  
-% if the input jvec is empty)
+%       if the input jvec is empty)
 % Q: orthogonal factor in the QR decomposition
-% diag(sqrt(u))*C(:,jvec)=Q*R where C=dCHEBVAND(n,X)
+%    diag(sqrt(u))*C(:,jvec)=Q*R where C=dCHEBVAND(n,X)
 % R: triangular factor in the QR decomposition
-% diag(sqrt(u))*C(:,jvec)=Q*R where C=dCHEBVAND(n,X)
+%    diag(sqrt(u))*C(:,jvec)=Q*R where C=dCHEBVAND(n,X)
 
 % 11/06/2020 
 % M. Dessole, F. Marcuzzi, M. Vianello
@@ -46,9 +47,14 @@ end
 
 % scaling the matrix rows by the sqrt of the weights 
 B = zeros(size(C));
-for k=1:length(C(1,:))
-    B(:,k)=C(:,k).*sqrt(u);
+if isscalar(u)
+    B=C*sqrt(u);
+else
+    for k=1:length(C(1,:))
+        B(:,k)=C(:,k).*sqrt(u);
+    end
 end
+
 
 % polynomial basis orthogonalization
 if N<length(C(1,:)) 
