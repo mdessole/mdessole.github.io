@@ -21,7 +21,7 @@ function [U,jvec,Q,R] = dORTHVAND(deg,X,u,jvec,C)
 % R: triangular factor in the QR decomposition
 %    diag(sqrt(u))*C(:,jvec)=Q*R where C=dCHEBVAND(n,X)
 
-% 11/06/2020 
+% 26/07/2020 
 % M. Dessole, F. Marcuzzi, M. Vianello
 
 % FUNCTION BODY
@@ -59,14 +59,10 @@ end
 % polynomial basis orthogonalization
 if N<length(C(1,:)) 
     if isempty(jvec)
-        try
-           [Q,R0,pm]=qr(B,'vector');
-        catch ME
-            fprinf('Q is too large. Computing economy-size QR ...\n');
-            [Q,R0,pm]=qr(B,0);%'vector');
-        end 
+        [Q,R,pm]=qr(B,0);
         jvec=pm(1:N);
-        R=R0(1:N,1:N);
+        R=R(1:N,1:N);
+        Q = Q(:,1:N);
     else
         [Q,R]=qr(B(:,jvec),0);
     end
