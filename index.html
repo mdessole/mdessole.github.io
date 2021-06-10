@@ -110,8 +110,9 @@
 
     
 <h3>Software</h3>
-<a href="./dcatch.html"> dCATCH</a> <br>
-<a href="https://github.com/mdessole/ns2div"> ns2div</a> 
+<a href="https://github.com/mdessole/qrdm"> qrdm</a> - QR factorization with Deviation Maximization pivoting <br>
+<a href="https://www.math.unipd.it/~marcov/dCATCH.html"> dCATCH</a> - Nearly-optimal polynomial regression designs on high-dimentional point clouds <br>
+<a href="https://github.com/mdessole/ns2div"> ns2div</a> - GPU solver for Navier-Stokes equations with variable density 
 
 
 <h3>Publications</h3>
@@ -119,7 +120,43 @@
 <div id="publications-row" class="row">
     <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12">
     <ul class="publications-list">
- 
+
+ <li>
+      <div class="paper">
+          <div class="paper-author">
+              M. Dessole, F. Marcuzzi
+          </div>
+          <div class="paper-title">
+              Deviation Maximization for Rank-Revealing QR Factorizations
+          </div>
+
+          <div class="paper-journal">
+              Preprint, 2021
+          </div>
+    
+           <div class="paper-links">
+          <!-- <small> -->
+            [ <a role="button" href="https://arxiv.org/abs/2106.03138">link</a>,
+            <a type="button" data-toggle="collapse" href="#bibTex3">bibTeX</a> ]
+          <!-- </small> -->
+          </div>
+
+          <div class="bibTeX collapse" id="bibTex3">
+          <pre>
+@article{DMa21,   
+title = {{Deviation Maximization for Rank-Revealing QR Factorizations}},
+author = {Dessole, Monica and Marcuzzi, Fabio},
+keywords = {QR factorization; rank revealing; column pivoting; block algorithm},
+abstract = {In this paper we introduce a new column selection strategy, named here ``Deviation Maximization'', and apply it to compute rank-revealing QR factorizations as an alternative to the well known block version of the QR factorization with the column pivoting method, called QP3 and currently implemented in LAPACK's \texttt{xgeqp3} routine.
+We show that the resulting algorithm, named QRDM, has similar rank-revealing properties of QP3 and better execution times. We present numerical test results on a wide data set of numerically singular matrices, which has become a reference in the recent literature.}
+}
+          </pre>
+          </div>
+          
+         
+      </div>
+  </li>
+      
  <li>
       <div class="paper">
           <div class="paper-author">
