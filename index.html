@@ -112,6 +112,7 @@
 <br>
 
 <h3>Software</h3>
+<a href="https://github.com/mdessole/lhdm"> lhdm</a> - Lawson-Hanson algorithm with Deviation Maximization pivoting for solving NNLS <br>
 <a href="https://github.com/mdessole/qrdm"> qrdm</a> - QR factorization with Deviation Maximization pivoting <br>
 <a href="https://www.math.unipd.it/~marcov/dCATCH.html"> dCATCH</a> - Nearly-optimal polynomial regression designs on high-dimentional point clouds <br>
 <a href="https://github.com/mdessole/ns2div"> ns2div</a> - GPU solver for Navier-Stokes equations with variable density 
@@ -119,9 +120,44 @@
 
 <h3>Publications</h3>
 
+<h4>Preprints</h4>
+
 <div id="publications-row" class="row">
     <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12">
     <ul class="publications-list">
+
+ <li>
+      <div class="paper">
+          <div class="paper-author">
+              M. Dessole, M. Dell’Orto, F. Marcuzzi
+          </div>
+          <div class="paper-title">
+              The Lawson-Hanson Algorithm with Deviation Maximization: Finite Convergence and Sparse Recovery
+          </div>
+
+          <div class="paper-journal">
+              Preprint, August 2021
+          </div>
+    
+           <div class="paper-links">
+          <!-- <small> -->
+            [ <a role="button" href="https://arxiv.org/abs/2108.05345">link</a>,
+            <a type="button" data-toggle="collapse" href="#bibTex3">bibTeX</a> ]
+          <!-- </small> -->
+          </div>
+
+          <div class="bibTeX collapse" id="bibTex3">
+          <pre>
+@unpublished{DDM21,   
+title = {{The Lawson-Hanson Algorithm with Deviation Maximization: Finite Convergence and Sparse Recovery}},
+author = {Dessole, Monica and Dell’Orto, Marco and Marcuzzi, Fabio},
+keywords = {nonnegative least squares; sparse recovery; block pivoting},
+abstract = {In this work we apply the "deviation maximization", a new column selection strategy, to the Lawson-Hanson algorithm for the solution of NonNegative Least Squares (NNLS), devising a new algorithm we call Lawson-Hanson with Deviation Maximization (LHDM). This algorithm allows to exploit BLAS-3 operations, leading to higher performances. We show the finite convergence of this algorithm and explore the sparse recovery ability of LHDM. The results are presented with an extensive campaign of experiments, where we compare its performance against several ℓ1-minimization solvers. An implementation of the proposed algorithm is available on a public repository.}
+}
+          </pre>
+          </div>       
+      </div>
+  </li>
 
  <li>
       <div class="paper">
@@ -133,7 +169,7 @@
           </div>
 
           <div class="paper-journal">
-              Preprint, 2021
+              Preprint, June 2021
           </div>
     
            <div class="paper-links">
@@ -145,7 +181,7 @@
 
           <div class="bibTeX collapse" id="bibTex3">
           <pre>
-@article{DMa21,   
+@unpublished{DMa21,   
 title = {{Deviation Maximization for Rank-Revealing QR Factorizations}},
 author = {Dessole, Monica and Marcuzzi, Fabio},
 keywords = {QR factorization; rank revealing; column pivoting; block algorithm},
@@ -153,12 +189,23 @@ abstract = {In this paper we introduce a new column selection strategy, named he
 We show that the resulting algorithm, named QRDM, has similar rank-revealing properties of QP3 and better execution times. We present numerical test results on a wide data set of numerically singular matrices, which has become a reference in the recent literature.}
 }
           </pre>
-          </div>
-          
-         
+          </div>       
       </div>
   </li>
-      
+
+
+    </ul>
+    </div>
+    </div>
+
+
+<h4>Journal Papers</h4>
+
+<div id="publications-row" class="row">
+    <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12">
+    <ul class="publications-list">
+
+       
  <li>
       <div class="paper">
           <div class="paper-author">
