@@ -1,163 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="google-site-verification" content="O9SfCv8Kt7zhguochp6a0Do9jnWuH2z4tF1T7zx3Y9E" />
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <meta name="description" content="Personal webpage of Monica Dessole, PhD candidate at unipd">
-        <meta name="author" content="Monica Dessole">
-        <meta name="keywords" content="Monica Dessole, phd, unipd, math, applied, HPC, numerical, linear, algebra, parallel, computing, gpu">
 
-        <title>Personal webpage of Monica Dessole</title>
+<head>
+	<meta name="google-site-verification" content="O9SfCv8Kt7zhguochp6a0Do9jnWuH2z4tF1T7zx3Y9E" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="Personal webpage of Monica Dessole, PhD candidate at unipd">
+	<meta name="author" content="Monica Dessole">
+	<meta name="keywords" content="Monica Dessole, phd, unipd, math, applied, HPC, numerical, linear, algebra, parallel, computing, gpu">
+	<title>Personal webpage of Monica Dessole</title>
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="./css/timeline.css" />
+	<link rel="stylesheet" href="./css/main.css" />
+	<!-- Font awesome -->
+	<!-- <script src="https://use.fontawesome.com/1325cd00ac.js"></script> -->
+	<script src="https://kit.fontawesome.com/ca2fbe5b96.js" crossorigin="anonymous"></script>
+	<!-- Bootstrap JS -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<style type="text/css">
+		body{
+			font-family:sans-serif; 
+			background-color: ghostwhite;
+		}
+		#container {
+  			width: 100%;
+   			margin: 16px auto;
+    		padding: 16px;
+		}	
+		#box {
+  			width: 800px;
+  			margin-left: auto;
+    		margin-right: auto;
+  			
+  			position: relative;
+		}		
+		#my-img{
+    		height: 100%;
+    		width: 100%;
+    		position: relative;
+    		display:flex;
+		}
+		#main-header{
+			text-align:center;
+			background-color:teal;
+			color:white;
+			padding:5px;
+		}
+		#current-position{
+			margin-right:250px;
+	</style>
+</head>
 
-        <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
-
-        <link rel="stylesheet" href="./css/timeline.css" />
-        <link rel="stylesheet" href="./css/main.css" />
-
-
-        <!-- Font awesome -->
-        <!-- <script src="https://use.fontawesome.com/1325cd00ac.js"></script> -->
-        <script src="https://kit.fontawesome.com/ca2fbe5b96.js" crossorigin="anonymous"></script>
-        
-        <!-- Bootstrap JS -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    </head>
-
-    <body>
-
-    <main>
-        <div class="jumbotron jumbo-header">
-<div class="container">
-    <div>
-
-    <div style="display: inline-block; vertical-align: middle">
-        <h2>
-            Monica Dessole <small>PhD candidate</small><br>
-
-        </h2>
-    </div>
-    </div>
-
-    <div class="row">       
-         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4"> 
-         <img  style="height: 100%; width: 100%; object-fit: contain" class="photo img-rounded" src="images/IMG_9995.JPG" >
-        <!-- <div class="photo"><i class="fa fa-user-o" aria-hidden="true"></i></div> --> 
-        </div>    
-    <div class="infos col-lg-6 col-md-8 col-sm-8 col-xs-8" style="vertical-align: middle">
-        <div style="vertical-align: top">
-        <i class="fas fa-graduation-cap" aria-hidden="true" style="width:22px"></i>
-        <span>
-            University of Padova
-        </span>
-        </div>
-
-        <div style="margin-top: 0px">
-        <i class="fas fa-envelope" aria-hidden="true" style="width:22px"></i>
-        <span>monica.dessole at math.unipd.it</span>
-        </div>
-
-        <div style="margin-top: 0px">
-        <i class="fab fa-github" aria-hidden="true" style="font-size: 1.2em; width:22px"></i>
-        <span> <a href="https://github.com/mdessole"> mdessole </a> </span>
-        </div>
-        
-        <div style="margin-top: 0px">
-        <i class="fab fa-orcid" aria-hidden="true" style="font-size: 1.2em; width:22px"></i>
-        <span> <a href="https://orcid.org/0000-0002-2727-9123"> 0000-0002-2727-9123 </a> </span>
-        </div>
-        
-    </div>
-    </div>
-</div>
-</div>
-
-<div class="container">
-
-<h3>Short Bio </h3>
-<div class="row">
-<!--     <div class="col-sm-1">
-    <div class="bio-image"><i class="fa fa-user-o" aria-hidden="true"></i></div>
-    </div>
- -->
-    <div id="bio" class="col-lg-8 col-md-10 col-sm-12 col-xs-12">
-    <p>
-    I am a PhD candidate in Applied and Computational Mathematics at <a href="https://www.unipd.it/en/">University of Padova</a> 
-    under the supervision of <a href="https://www.math.unipd.it/~marcuzzi/">prof. Fabio Marcuzzi</a>, with a 
-    grant funded by <a href="https://www.beantech.it/">BeanTech</a>. My research focuses on numerical and computational linear algebra, 
-    and it is concerned with the development of efficient algorithms for scientific computing and the 
-    implementation of high-quality scientific software, primarily parallel solvers for differential 
-    equations and methods for analyzing very large matrices and datasets. 
-    </p>
-    <p>
-    I received my Marter's degree in 2017 at <a href="https://www.math.unipd.it/it/">DM</a> with a thesis focused on high-fidelity numerical simulations of incompressible 
-    unsteady Navier-Stokes equations with variable density on GPUs,
-    in collaboration with University of Lille, where I spent a term thanks to the Erasmus+ programme. 
-    Before starting my PhD, I joined for one year a research project at <a href="https://www.dei.unipd.it/">DEI</a>
-    aimed at real-time fluid flow simulations for virtual prototyping. During my PhD I have worked
-    on the parallel solution of linear systems arising from differential equations using both 
-    direct and iterative methods. I have also dealt with the efficient solution of ill-posed 
-    problems my means of low-rank models and statistical techniques with application to analysis of
-    data-sets in high dimentional spaces.
-    </p>
-    <p>
-     For further information please check out my <a href="cv_dessole.pdf"> cv</a>. 
-    </p>
-    </div>
-</div>
-
-<h3>Teaching</h3> 
-<a href="https://learn.eduopen.org/eduopenv2/pathway_details.php?specialid=57"> MOOC: Scientific Computing in Python</a> (in Italian)<br>
-<a href="https://mediaspace.unipd.it/channel/Introduction%2Bto%2BPython%2B-%2Beng/184952523"> Introduction to Python</a>
-(<a href="https://mediaspace.unipd.it/channel/Introduzione%2Ba%2B%2BPython/201269943"> Italian version</a> )
-<br>
-
-<h3>Software</h3>
-<a href="https://github.com/mdessole/lhdm"> LHDM</a> - Active-set solver for NonNegative Least Squares based on Deviation Maximization column selection <br>
-<a href="https://github.com/mdessole/qrdm"> QRDM</a> - QR factorization for rank-deficient matrices based on Deviation Maximization column selection <br>
-<a href="https://www.math.unipd.it/~marcov/dCATCH.html"> dCATCH</a> - Nearly-optimal polynomial regression designs on high-dimentional point clouds <br>
-<a href="https://github.com/mdessole/parasof"> PARASOF</a> - Direct GPU solver for linear systems with BABD structure <br>
-<a href="https://github.com/mdessole/ns2div"> ns2div</a> - Hybrid CPU-GPU solver for Navier-Stokes equations with variable density 
-
-
-<h3>Publications</h3>
-
-<h4>Preprints</h4>
-
-<div id="publications-row" class="row">
-    <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12">
-    <ul class="publications-list">
-
- <li>
-      <div class="paper">
-          <div class="paper-author">
-              M. Dessole, M. Dell’Orto, F. Marcuzzi
-          </div>
-          <div class="paper-title">
-              The Lawson-Hanson Algorithm with Deviation Maximization: Finite Convergence and Sparse Recovery
-          </div>
-
-          <div class="paper-journal">
-              Preprint, August 2021
-          </div>
-    
-           <div class="paper-links">
-          <!-- <small> -->
-            [ <a role="button" href="https://arxiv.org/abs/2108.05345">link</a>,
-            <a type="button" data-toggle="collapse" href="#bibTex5">bibTeX</a> ]
-          <!-- </small> -->
-          </div>
-
-          <div class="bibTeX collapse" id="bibTex5">
-          <pre>
+<body>
+	<main>
+		<div class="jumbotron jumbo-header">
+			<div class="container">
+			<div id="box">
+				
+					<div class="col-lg-3 col-md-1 col-sm-4 col-xs-4"> 
+					 <img style="height: 100%; 
+						width: 100%; object-fit: contain" class="photo img-rounded" src="images/IMG_9995.JPG" align="right"/>
+					</div>
+				<h2>
+            				Monica Dessole <small>PhD </small><br>
+        			</h2> 
+										
+<div style="vertical-align: top"> <i class="fas fa-graduation-cap" aria-hidden="true" style="width:22px"></i> <span>
+            					Leonardo Labs
+        					</span> </div>
+						<div style="margin-top: 0px"> 
+						<i class="fas fa-envelope" aria-hidden="true" style="width:22px"></i> 
+						<span>monica.dessole.ext at leonardo.com</span> 
+						</div>
+						<div style="margin-top: 0px"> 
+						<i class="fab fa-github" aria-hidden="true" style="font-size: 1.2em; width:22px"></i> 
+						<span> <a href="https://github.com/mdessole"> mdessole </a> </span> 
+						</div>
+						<div style="margin-top: 0px"> 
+						<i class="fab fa-orcid" aria-hidden="true" style="font-size: 1.2em; width:22px"></i> 
+						<span> <a href="https://orcid.org/0000-0002-2727-9123"> 0000-0002-2727-9123 </a> </span> 				
+						</div>
+					
+			</div>
+			</div>
+		</div>
+		<div class="container">
+		<div id="box">
+			<h3>Short Bio </h3>
+			
+				<p align="justify"> 
+				I am a research fellow at <a href="https://www.leonardo.com/it/innovation-technology/leonardo-labs/">Leonardo Labs</a> 
+				working in the HPC/Cloud group. 
+				My research focuses on numerical and computational linear algebra, and it includes the development of efficient 
+				algorithms for scientific computing and the implementation of high-quality scientific 
+				software, primarily parallel solvers for differential equations, and methods for analyzing very large matrices and datasets. 
+				I am also involved in the development of tools and frameworks for BigData analytics.
+				</p>
+				<p align="justify"> 
+				I received my PhD in Computational Mathematics in 2022 at <a href="https://www.unipd.it/en/">University of Padova</a>, with a grant funded by 
+				<a href="https://www.beantech.it/">BeanTech</a>. During my PhD I have worked on the massively parallel solution on GPUs of linear systems arising 
+				from differential equations such as high-fidelity numerical simulations of incompressible unsteady Navier-Stokes equations and BVODE problems.
+				I have also dealt with the efficient solution of ill-posed problems my means of low-rank models and 
+				statistical techniques with application to analysis of data-sets in high dimensional spaces. 
+				Before starting my PhD, I joined for one year a 
+				research project at <a href="https://www.dei.unipd.it/">DEI</a> aimed at real-time fluid flow simulations for virtual prototyping. 
+				</p>
+				<p> For further information please check out my <a href="cv_dessole.pdf"> cv</a>. </p>
+			
+			<h3>Teaching</h3> 
+			<a href="https://learn.eduopen.org/eduopenv2/pathway_details.php?specialid=57"> 
+			MOOC: Scientific Computing in Python</a> (in Italian)
+			<br> <a href="https://mediaspace.unipd.it/channel/Introduction%2Bto%2BPython%2B-%2Beng/184952523"> 
+			Introduction to Python</a> (<a href="https://mediaspace.unipd.it/channel/Introduzione%2Ba%2B%2BPython/201269943"> Italian version</a> )
+			<br>
+			<h3>Software</h3> 
+			<a href="https://github.com/mdessole/lhdm"> LHDM</a> - Active-set solver for NonNegative Least Squares based on Deviation Maximization column selection
+			<br> <a href="https://github.com/mdessole/qrdm"> QRDM</a> - QR factorization for rank-deficient matrices based on Deviation Maximization column selection
+			<br> <a href="https://www.math.unipd.it/~marcov/dCATCH.html"> dCATCH</a> - Nearly-optimal polynomial regression designs on high-dimentional point clouds
+			<br> <a href="https://github.com/mdessole/parasof"> PARASOF</a> - Direct GPU solver for linear systems with BABD structure
+			<br> <a href="https://github.com/mdessole/ns2div"> ns2div</a> - Hybrid CPU-GPU solver for Navier-Stokes equations with variable density
+			<h3>Publications</h3>
+			<h4>Preprints</h4>
+			<div id="publications-row" class="row">
+					<ul class="publications-list">
+						<li>
+							<div class="paper">
+								<div class="paper-author"> M. Dessole, M. Dell’Orto, F. Marcuzzi </div>
+								<div class="paper-title"> The Lawson-Hanson Algorithm with Deviation Maximization: Finite Convergence and Sparse Recovery </div>
+								<div class="paper-journal"> Preprint, August 2021 </div>
+								<div class="paper-links">
+									[ <a role="button" href="https://arxiv.org/abs/2108.05345">link</a>, 
+									<a type="button" data-toggle="collapse" href="#bibTex5">bibTeX</a> ]					
+								</div>
+								<div class="bibTeX collapse" id="bibTex5"> 
+<pre>
 @unpublished{DDM21,   
 title = {{The Lawson-Hanson Algorithm with Deviation Maximization: Finite Convergence and Sparse Recovery}},
 author = {Dessole, Monica and Dell’Orto, Marco and Marcuzzi, Fabio},
@@ -174,33 +157,28 @@ ability of LHDM. The results are presented with an extensive campaign of
 experiments, where we compare its performance against several ℓ1-minimization 
 solvers. An implementation of the proposed algorithm is available on a public repository.}
 }
-          </pre>
-          </div>       
-      </div>
-  </li>
-
- <li>
-      <div class="paper">
-          <div class="paper-author">
-              M. Dessole, F. Marcuzzi
-          </div>
-          <div class="paper-title">
-              Deviation Maximization for Rank-Revealing QR Factorizations
-          </div>
-
-          <div class="paper-journal">
-              Preprint, June 2021
-          </div>
-    
-           <div class="paper-links">
-          <!-- <small> -->
-            [ <a role="button" href="https://arxiv.org/abs/2106.03138">link</a>,
-            <a type="button" data-toggle="collapse" href="#bibTex4">bibTeX</a> ]
-          <!-- </small> -->
-          </div>
-
-          <div class="bibTeX collapse" id="bibTex4">
-          <pre>
+          </pre> 
+								</div>
+							
+							</div>
+						</li>
+						
+					</ul>
+				
+			</div>
+			<h4>Journal Papers</h4>
+			<div id="publications-row" class="row">
+					<ul class="publications-list">
+<li>
+							<div class="paper">
+								<div class="paper-author"> M. Dessole, F. Marcuzzi </div>
+								<div class="paper-title"> Deviation Maximization for Rank-Revealing QR Factorizations </div>
+								<div class="paper-journal"> To appear on Numerical Algorithms, 2022. </div>
+								<div class="paper-links">
+									[ <a role="button" href="https://arxiv.org/abs/2106.03138">link</a>,
+									 <a type="button" data-toggle="collapse" href="#bibTex4">bibTeX</a> ]		
+								</div>
+								<div class="bibTeX collapse" id="bibTex4"> <pre>
 @unpublished{DMa21,   
 title = {{Deviation Maximization for Rank-Revealing QR Factorizations}},
 author = {Dessole, Monica and Marcuzzi, Fabio},
@@ -217,46 +195,19 @@ properties of QP3 and better execution times. We present numerical test results
 on a wide data set of numerically singular matrices, which has become 
 a reference in the recent literature.}
 }
-          </pre>
-          </div>       
-      </div>
-  </li>
-
-
-    </ul>
-    </div>
-    </div>
-
-
-<h4>Journal Papers</h4>
-
-<div id="publications-row" class="row">
-    <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12">
-    <ul class="publications-list">
-
-       
- <li>
-      <div class="paper">
-          <div class="paper-author">
-              M. Dessole, F. Marcuzzi, M. Vianello
-          </div>
-          <div class="paper-title">
-              dCATCH-A Numerical Package for d-Variate Near G-Optimal Tchakaloff Regression via Fast NNLS
-          </div>
-
-          <div class="paper-journal">
-              Mathematics, 2020
-          </div>
-    
-           <div class="paper-links">
-          <!-- <small> -->
-            [ <a role="button" href="https://www.mdpi.com/2227-7390/8/7/1122">link</a>,
-            <a type="button" data-toggle="collapse" href="#bibTex3">bibTeX</a> ]
-          <!-- </small> -->
-          </div>
-
-          <div class="bibTeX collapse" id="bibTex3">
-          <pre>
+          </pre> </div>
+							</div>
+						</li>
+						<li>
+							<div class="paper">
+								<div class="paper-author"> M. Dessole, F. Marcuzzi, M. Vianello </div>
+								<div class="paper-title"> dCATCH-A Numerical Package for d-Variate Near G-Optimal Tchakaloff Regression via Fast NNLS </div>
+								<div class="paper-journal"> Mathematics, 2020 </div>
+								<div class="paper-links">
+									<!-- <small> -->[ <a role="button" href="https://www.mdpi.com/2227-7390/8/7/1122">link</a>, <a type="button" data-toggle="collapse" href="#bibTex3">bibTeX</a> ]
+									<!-- </small> -->
+								</div>
+								<div class="bibTeX collapse" id="bibTex3"> <pre>
 @article{DMV20Ma,   
 title = {{dCATCH---A Numerical Package for d-Variate Near G-Optimal Tchakaloff Regression via Fast NNLS}},
 journal = {Mathematics},
@@ -278,36 +229,19 @@ large-scale problems where $card(X) \times \dim(P_{2m}^d)$ is up to $10^8$--$10^
 $\dim(P_{2m}^d)=\binom{2m+d}{d}=\binom{2m+d}{2m}$. Several numerical tests 
 are presented on complex shapes in $d=3$ and on hypercubes in $d>3$.}
 }
-          </pre>
-          </div>
-          
-         
-      </div>
-  </li>
-     
-
-     <li>
-      <div class="paper">
-          <div class="paper-author">
-              M. Dessole, F. Marcuzzi
-          </div>
-          <div class="paper-title">
-              A massively-parallel algorithm for Bordered Almost Block Diagonal systems on GPUs
-          </div>
-
-          <div class="paper-journal">
-              Numerical Algorithms, 2020
-          </div>
-    
-           <div class="paper-links">
-          <!-- <small> -->
-            [ <a role="button" href="https://link.springer.com/article/10.1007/s11075-020-00931-8">link</a>,
-            <a type="button" data-toggle="collapse" href="#bibTex2">bibTeX</a> ]
-          <!-- </small> -->
-          </div>
-
-          <div class="bibTeX collapse" id="bibTex2">
-          <pre>	  
+          </pre> </div>
+							</div>
+						</li>
+						<li>
+							<div class="paper">
+								<div class="paper-author"> M. Dessole, F. Marcuzzi </div>
+								<div class="paper-title"> A massively-parallel algorithm for Bordered Almost Block Diagonal systems on GPUs </div>
+								<div class="paper-journal"> Numerical Algorithms, 2020 </div>
+								<div class="paper-links">
+									<!-- <small> -->[ <a role="button" href="https://link.springer.com/article/10.1007/s11075-020-00931-8">link</a>, <a type="button" data-toggle="collapse" href="#bibTex2">bibTeX</a> ]
+									<!-- </small> -->
+								</div>
+								<div class="bibTeX collapse" id="bibTex2"> <pre>	  
 @article{DMa20NA,
 title = {{A massively parallel algorithm for Bordered Almost Block Diagonal Systems on GPUs}},
 journal = {Numerical Algorithms},
@@ -322,35 +256,19 @@ algorithm is compared with the state-of-the-art algorithms, in particular SOF, f
 and takes the same stability properties. We detail its design and implementation issues and give the main 
 figures of its theoretical and experimental performances.}
 }
-          </pre>
-          </div>
-          
-         
-      </div>
-  </li>
-        
-   <li>
-      <div class="paper">
-          <div class="paper-author">
-              M. Dessole, F. Marcuzzi, M. Vianello
-          </div>
-          <div class="paper-title">
-              Accelerating the Lawson-Hanson NNLS solver for large-scale Tchakaloff regression designs
-          </div>
-
-          <div class="paper-journal">
-              Domolites Research Notes on Approximation, 2020
-          </div>
-
-           <div class="paper-links">
-          <!-- <small> -->
-            [ <a role="button" href="https://drna.padovauniversitypress.it/2020/1/3">link</a>,
-            <a type="button" data-toggle="collapse" href="#bibTex1">bibTeX</a> ]
-          <!-- </small> -->
-          </div>
-
-          <div class="bibTeX collapse" id="bibTex1">
-          <pre>	  
+          </pre> </div>
+							</div>
+						</li>
+						<li>
+							<div class="paper">
+								<div class="paper-author"> M. Dessole, F. Marcuzzi, M. Vianello </div>
+								<div class="paper-title"> Accelerating the Lawson-Hanson NNLS solver for large-scale Tchakaloff regression designs </div>
+								<div class="paper-journal"> Domolites Research Notes on Approximation, 2020 </div>
+								<div class="paper-links">
+									<!-- <small> -->[ <a role="button" href="https://drna.padovauniversitypress.it/2020/1/3">link</a>, <a type="button" data-toggle="collapse" href="#bibTex1">bibTeX</a> ]
+									<!-- </small> -->
+								</div>
+								<div class="bibTeX collapse" id="bibTex1"> <pre>	  
 @article{DMV20DRNA,
 title = {{Accelerating the Lawson-Hanson NNLS solver for large-scale Tchakaloff regression designs}},
 journal = {Dolomites Research Notes on Approximation},
@@ -370,34 +288,19 @@ The key tool is Tchakaloff-like compression of discrete probability measures, vi
 of the Lawson-Hanson NNLS solver for the corresponding full and large-scale underdetermined moment system, 
 that can have for example a size order of $10^3$ (basis polynomials) $\times \ 10^4$ (nodes).}
 }
-          </pre>
-          </div>
-      </div>
-  </li>
-        
-        
-    <li>
-      <div class="paper">
-          <div class="paper-author">
-              M. Dessole, F. Marcuzzi
-          </div>
-          <div class="paper-title">
-              Fully iterative ILU preconditioning of the unsteady Navier-Stokes equations for GPGPU
-          </div>
-
-          <div class="paper-journal">
-              Computers & Mathematics with Applications, 2019
-          </div>
-
-          <div class="paper-links">
-          <!-- <small> -->
-            [ <a role="button" href="https://www.sciencedirect.com/science/article/pii/S0898122118306345">link</a>,
-            <a type="button" data-toggle="collapse" href="#bibTex0">bibTeX</a> ]
-          <!-- </small> -->
-          </div>
-
-          <div class="bibTeX collapse" id="bibTex0">
-          <pre>
+          </pre> </div>
+							</div>
+						</li>
+						<li>
+							<div class="paper">
+								<div class="paper-author"> M. Dessole, F. Marcuzzi </div>
+								<div class="paper-title"> Fully iterative ILU preconditioning of the unsteady Navier-Stokes equations for GPGPU </div>
+								<div class="paper-journal"> Computers & Mathematics with Applications, 2019 </div>
+								<div class="paper-links">
+									<!-- <small> -->[ <a role="button" href="https://www.sciencedirect.com/science/article/pii/S0898122118306345">link</a>, <a type="button" data-toggle="collapse" href="#bibTex0">bibTeX</a> ]
+									<!-- </small> -->
+								</div>
+								<div class="bibTeX collapse" id="bibTex0"> <pre>
 @article{DMa2019907,
 title = {{Fully iterative ILU preconditioning of the unsteady Navier–Stokes equations for GPGPU}},
 journal = {Computers \& Mathematics with Applications},
@@ -428,19 +331,26 @@ turns out to be robust and efficient. We will show numerical results for variabl
 discretized with the scheme described in Calgaro et al. (2008), in classical benchmarks and, in particular, 
 in the well-known Rayleigh–Taylor instability.}
 }
-        </pre>
-        </div>
-  </div>
-  </li>
+        </pre> </div>
+							</div>
+						</li>
+					</ul>
+				</div>
+<h4>PhD thesis</h4>
+<p>
+<a href="Topics_in_Numerical_Linear_Algebra_for_High_Performance_Computing.pdf"> Topics in Numerical Linear Algebra for High Performance Computing </a> <br>		
+</p>
 
-    </ul>
-    </div>
-</div>
+<p>
+<script language="Javascript">
+document.write("\nLast modified on: " + document.lastModified +" CET ");
+</SCRIPT>
+</p>
+			</div>
 
+		</div>
 
-</div>
-    </main>
+	</main>
+</body>
 
-  </body>
 </html>
-
