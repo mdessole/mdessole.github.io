@@ -6,17 +6,16 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0”>
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<meta name="description" content="Personal webpage of Monica Dessole, PhD candidate at unipd">
+	<meta name="description" content="Personal webpage of Monica Dessole, PhDs”>
 	<meta name="author" content="Monica Dessole">
-	<meta name="keywords" content="Monica Dessole, phd, unipd, math, applied, HPC, numerical, linear, algebra, parallel, computing, gpu">
+	<meta name="keywords" content="Monica Dessole, phd, leonardo, math, applied, HPC, numerical, linear, algebra, parallel, computing, gpu">
 	<title>Personal webpage of Monica Dessole</title>
 	<!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 	<link rel="stylesheet" href="./css/timeline.css" />
-	<link rel="stylesheet" href="./css/main.css" />
+	<link rel="stylesheet" href="./css/main.css"/>
 	<!-- Font awesome -->
 	<script src="https://kit.fontawesome.com/ca2fbe5b96.js" crossorigin="anonymous"></script>
 	<!-- Bootstrap JS -->
@@ -25,19 +24,20 @@
 	<style type="text/css">
 		body{
 			font-family:sans-serif; 
+			font-size: 2.5vh;		
 			background-color: ghostwhite;
 		}
 		#container {
   			width: 100%;
    			margin: 16px auto;
-    		padding: 16px;
+    			padding: 16px;
 		}	
 		#box {
-  			width: 800px;
+  			width: 70vw;
   			margin-left: auto;
-    		margin-right: auto;
-  			
+    			margin-right: auto;	
   			position: relative;
+			box-sizing: border-box;
 		}		
 		#my-img{
     		height: 100%;
@@ -53,6 +53,20 @@
 		}
 		#current-position{
 			margin-right:250px;
+		}
+/* Create two equal columns that floats next to each other */
+.column-one {
+  float: left;
+  width: 20%;
+  min-width: 150px;
+  padding: 10px;
+  display: inline-block;
+}
+.column-two {
+  float: left;
+  padding: 10px;
+  display: inline-block;
+}
 	</style>
 </head>
 
@@ -61,16 +75,19 @@
 		<div class="jumbotron jumbo-header">
 			<div class="container">
 			<div id="box">
-				
-					<div class="col-lg-3 col-md-1 col-sm-4 col-xs-4"> 
-					 <img style="height: 100%; 
-						width: 100%; object-fit: contain" class="photo img-rounded" src="images/IMG_9995.JPG" align="right"/>
+				 <div class="row">
+  					<div class="column-one"> 
+					<col style="width:30%">
+						<img style="height: 100%; 
+						width: 100%; object-fit: 
+						contain" class="photo img-rounded" 
+						src="images/IMG_9995.JPG" align="left"/> 
 					</div>
-				<h2>
+  					<div class="column-two">
+					<h2>
             				Monica Dessole <small>PhD </small><br>
-        			</h2> 
-										
-<div style="vertical-align: top"> <i class="fas fa-graduation-cap" aria-hidden="true" style="width:22px"></i> <span>
+        				</h2> 
+					<div style="vertical-align: top"> <i class="fas fa-graduation-cap" aria-hidden="true" style="width:22px"></i> <span>
             					Leonardo Labs
         					</span> </div>
 						<div style="margin-top: 0px"> 
@@ -85,6 +102,9 @@
 						<i class="fab fa-orcid" aria-hidden="true" style="font-size: 1.2em; width:22px"></i> 
 						<span> <a href="https://orcid.org/0000-0002-2727-9123"> 0000-0002-2727-9123 </a> </span> 				
 						</div>
+					</div>
+				</div> 
+				
 					
 			</div>
 			</div>
