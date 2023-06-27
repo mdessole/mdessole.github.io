@@ -16,7 +16,7 @@
     <meta name="author" content="Monica Dessole" />
     <meta
       name="keywords"
-      content="Monica Dessole, unipd, phd, leonardo, math, applied, HPC, numerical, linear, algebra, parallel, computing, gpu"
+      content="Monica Dessole, unipd, phd, CERN, sycl, ROOT, math, applied, HPC, numerical, linear, algebra, parallel, computing, gpu"
     />
     <title>Personal webpage of Monica Dessole</title>
     <!-- Bootstrap core CSS -->
@@ -107,8 +107,7 @@
               <div class="col-md-9">
                 <h2>Monica Dessole</h2>
                 <p class="lead">
-                  Researcher in Numerical Linear Algebra and High-Performance
-                  Scientific Computing
+                  Researcher in High-Performance Scientific Computing
                 </p>
                 <!--<div style="vertical-align: top"> <i class="fas fa-graduation-cap" aria-hidden="true" style="width:22px"></i> <span>
             					Leonardo Labs
@@ -116,16 +115,14 @@
                 <span>
                   <p align="justify" , style="font-size: 16px">
                     I am a research fellow at
-                    <a
-                      href="https://www.leonardo.com/it/innovation-technology/leonardo-labs/"
-                      >Leonardo Labs</a
-                    >
-                    working in the HPC/Cloud group. My research focuses on
-                    numerical and computational linear algebra, and it includes
-                    the development of efficient algorithms for scientific
-                    computing and the implementation of scalable, reusable and maintainable scientific software,
-                    primarily parallel solvers for differential equations, and
-                    methods for analyzing large matrices and datasets.
+                    <a href="https://ep-dep-sft.web.cern.ch/">CERN SFT-EP</a>
+                    working in the ROOT group. My research focuses on numerical
+                    and computational linear algebra, and it includes the
+                    development of efficient algorithms for scientific computing
+                    and the implementation of scalable, reusable and
+                    maintainable scientific software, primarily parallel solvers
+                    for differential equations, and methods for analyzing large
+                    matrices and datasets.
                   </p>
                 </span>
                 <div style="margin-top: 0px">
@@ -134,7 +131,7 @@
                     aria-hidden="true"
                     style="width: 22px"
                   ></i>
-                  <span>monica.dessole.ext at leonardo.com</span>
+                  <span>monica.dessole at cern.ch</span>
                 </div>
 
                 <div style="margin-top: 0px">
@@ -189,34 +186,32 @@
           <h3>Short Bio</h3>
 
           <p align="justify">
-            I joined the HPC/Cloud group at
+            I received my PhD in Computational Mathematics at the
+            <a href="https://www.unipd.it/en/">University of Padova</a>, where I
+            also held a one year research fellowship year at the
+            <a href="https://www.dei.unipd.it/"
+              >Department of Information Engineering</a
+            >. Before joining CERN, I was part the HPC/Cloud group at
             <a
               href="https://www.leonardo.com/it/innovation-technology/leonardo-labs/"
               >Leonardo Labs</a
-            >
-            in February 2022, after receiving my PhD in Computational
-            Mathematics at
-            <a href="https://www.unipd.it/en/">University of Padova</a>, with a
-            grant funded by <a href="https://www.beantech.it/">BeanTech</a>.
-            Before starting my PhD, I joined for one year a research project at
-            <a href="https://www.dei.unipd.it/">DEI</a> aimed at real-time fluid
-            flow simulations for virtual prototyping. I am currently involved in
-            the design and implementation of cloud stacks for Big Data
-            analytics. Previously, I have worked on the massively parallel
-            solution on GPUs of linear systems arising from differential
-            equations such as high-fidelity numerical simulations of
-            incompressible unsteady Navier-Stokes equations and BVODE problems.
-            In particular, I have explored the performance attained by the
-            approximate iterative solution on GPUs of sparse triangular linear
-            systems in the context of ILU preconditioning with application to
-            immiscible dual fluid flow simulations. Moreover, I delepoped a
-            direct GPU solver taylored for structured matrices arising e.g. from
-            the discretization of two point boundary value problems. I have also
-            dealt with the efficient solution of ill-posed problems my means of
-            low-rank models and statistical techniques with application to
-            analysis of datasets in high dimensional spaces. I developed a block
-            pivoting technique which can be adopted to increase performance in
-            rank deficient QR computations and in sparse recovery problems.
+            >, where I was involved in the design and implementation of cloud
+            stacks for Big Data analytics. Previously, I have worked on the
+            massively parallel solution on GPUs of linear systems arising from
+            differential equations such as high-fidelity numerical simulations
+            of incompressible unsteady Navier-Stokes equations and BVODE
+            problems. In particular, I have explored the performance attained by
+            the approximate iterative solution on GPUs of sparse triangular
+            linear systems in the context of ILU preconditioning with
+            application to immiscible dual fluid flow simulations. Moreover, I
+            delepoped a direct GPU solver taylored for structured matrices
+            arising e.g. from the discretization of two point boundary value
+            problems. I have also dealt with the efficient solution of ill-posed
+            problems my means of low-rank models and statistical techniques with
+            application to analysis of datasets in high dimensional spaces. I
+            developed a block pivoting technique which can be adopted to
+            increase performance in rank deficient QR computations and in sparse
+            recovery problems.
           </p>
           <p>
             For further information please check out my
@@ -257,7 +252,11 @@
           <a href="https://github.com/mdessole/ns2div"> ns2div</a> - Hybrid
           CPU-GPU solver for Navier-Stokes equations with variable density
           <h3>Publications</h3>
-          <h4>Preprints</h4>
+          <!---<h4>Preprints</h4>
+          <div id="publications-row" class="row">
+            <ul class="publications-list"></ul>
+          </div>--->
+          <h4>Journal Papers</h4>
           <div id="publications-row" class="row">
             <ul class="publications-list">
               <li>
@@ -267,14 +266,20 @@
                     Accurate detection of hidden material changes as fictitious
                     heat sources from thermographic data
                   </div>
-                  <div class="paper-journal">Preprint, October 2022</div>
+                  <div class="paper-journal">
+                    Numerical Heat Transfer, Part B: Fundamentals, 2023
+                  </div>
+                  <div class="paper-links">
+                    [
+                    <a
+                      role="button"
+                      href="https://www.tandfonline.com/doi/abs/10.1080/10407790.2023.2220905?journalCode=unhb20"
+                      >link</a
+                    >
+                    ]
+                  </div>
                 </div>
               </li>
-            </ul>
-          </div>
-          <h4>Journal Papers</h4>
-          <div id="publications-row" class="row">
-            <ul class="publications-list">
               <li>
                 <div class="paper">
                   <div class="paper-author">
@@ -284,10 +289,14 @@
                     The Lawson-Hanson Algorithm with Deviation Maximization:
                     Finite Convergence and Sparse Recovery
                   </div>
-                  <div class="paper-journal"> Numerical Linear Algebra with Applications, 2023</div>
+                  <div class="paper-journal">
+                    Numerical Linear Algebra with Applications, 2023
+                  </div>
                   <div class="paper-links">
                     [
-                    <a role="button" href="https://onlinelibrary.wiley.com/doi/abs/10.1002/nla.2490"
+                    <a
+                      role="button"
+                      href="https://onlinelibrary.wiley.com/doi/abs/10.1002/nla.2490"
                       >link</a
                     >
                     ]
