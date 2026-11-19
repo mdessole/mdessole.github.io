@@ -1,402 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta name="google-site-verification" content="O9SfCv8Kt7zhguochp6a0Do9jnWuH2z4tF1T7zx3Y9E" />
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <meta name="description" content="Personal webpage of Monica Dessole”>
-    <meta name=" author" content="Monica Dessole" />
-  <meta name="keywords"
-    content="Monica Dessole, unipd, phd, CERN, sycl, ROOT, NATO, CMRE, CUDA, MPI, math, applied, HPC, numerical, linear, algebra, parallel, computing, gpu" />
-  <title>Personal webpage of Monica Dessole</title>
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
-
-  <!-- Font awesome -->
-  <script src="https://kit.fontawesome.com/ca2fbe5b96.js" crossorigin="anonymous"></script>
-  <!-- Bootstrap JS -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-    crossorigin="anonymous"></script>
-  <style type="text/css">
-    body {
-      font-family: sans-serif;
-      font-size: 16px;
-      background-color: ghostwhite;
-    }
-
-    #container {
-      width: 100%;
-      margin: 16px auto;
-      padding: 16px;
-    }
-
-    #box {
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-      box-sizing: border-box;
-    }
-
-    #my-img {
-      height: 100%;
-      width: 100%;
-      position: relative;
-      display: flex;
-    }
-
-    .main-header {
-      text-align: center;
-      background-color: teal;
-      color: white;
-      padding: 5px;
-    }
-
-    #current-position {
-      margin-right: 250px;
-    }
-
-    /* Create two equal columns that floats next to each other */
-    .column-one {
-      float: left;
-      width: 100%;
-      min-width: 150px;
-      padding: 10px;
-      display: inline-block;
-    }
-
-    .column-two {
-      float: left;
-      padding: 10px;
-      display: inline-block;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="O9SfCv8Kt7zhguochp6a0Do9jnWuH2z4tF1T7zx3Y9E">
+  <meta name="description" content="Monica Dessole — researcher in high-performance scientific computing, numerical linear algebra, and GPU algorithms. Explore research, publications, software, and teaching.">
+  <meta name="author" content="Monica Dessole">
+  <meta name="theme-color" content="#f7f6f2">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Monica Dessole | Scientific Computing">
+  <meta property="og:description" content="Turning mathematical ideas into scalable computation. Research, open-source software, and teaching by Monica Dessole.">
+  <meta property="og:url" content="https://mdessole.github.io/">
+  <meta property="og:image" content="https://mdessole.github.io/images/IMG_9995.JPG">
+  <meta property="og:image:alt" content="Portrait of Monica Dessole">
+  <link rel="canonical" href="https://mdessole.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/site.js" defer></script>
+  <title>Monica Dessole | Scientific Computing</title>
 </head>
-
 <body>
-  <main>
-    <div class="jumbotron jumbo-header">
-      <div class="container">
-        <div id="box">
-          <div class="row">
-            <div class="col-md-3">
-              <!--<div class = column-one>-->
-              <img style="height: 100%; width: 100%; object-fit: contain" class="photo img-rounded"
-                src="images/IMG_9995.JPG" align="left" />
-              <!-- Profile Image -->
-            </div>
-            <!--</div>-->
-            <div class="col-md-9">
-              <h2>Monica Dessole</h2>
-              <p class="lead">
-                Researcher in High-Performance Scientific Computing
-              </p>
-              <!--<div style="vertical-align: top"> <i class="fas fa-graduation-cap" aria-hidden="true" style="width:22px"></i> <span>
-            					Leonardo Labs
-        					</span> </div>-->
-              <span>
-                <p align="justify" , style="font-size: 16px">
-                  I am a visiting researcher at the 
-                  <a href="https://www.cmre.nato.int/">NATO Center for Maritime 
-                  Research and Experimentation (CMRE) </a> working in the 
-                  mine counter measures group. My research focuses on numerical
-                  and computational linear algebra, and it includes the
-                  development of efficient algorithms for scientific computing
-                  and the implementation of scalable, reusable and
-                  maintainable scientific software, primarily parallel solvers
-                  for differential equations, and methods for analyzing large
-                  matrices and datasets.
-                </p>
-              </span>
-              <div style="margin-top: 0px">
-                <i class="fas fa-envelope" aria-hidden="true" style="width: 22px"></i>
-                <span>monica.dessole at cern.ch</span>
-              </div>
-
-              <div style="margin-top: 0px">
-                <span>
-                  <a href="https://github.com/mdessole">
-                    <i class="fab fa-github" aria-hidden="true" style="font-size: 1.2em; width: 22px"></i>
-                  </a>
-                </span>
-                <span>
-                  <a href="https://orcid.org/0000-0002-2727-9123">
-                    <i class="fab fa-orcid" aria-hidden="true" style="font-size: 1.2em; width: 22px"></i>
-                  </a>
-                </span>
-                <span>
-                  <a href="https://scholar.google.com/citations?user=I8B-4HIAAAAJ&hl=it">
-                    <i class="fab fa-google" aria-hidden="true" style="font-size: 1.2em; width: 22px"></i>
-                  </a>
-                </span>
-                <span>
-                  <a href="https://www.linkedin.com/in/monica-dessole-9a8097a0/">
-                    <i class="fab fa-linkedin" aria-hidden="true" style="font-size: 1.2em; width: 22px"></i>
-                  </a>
-                </span>
-              </div>
-            </div>
-          </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="#" aria-label="Monica Dessole, home">md<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#research">Research</a>
+      <a href="#software">Software</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="intro-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Mathematics meets computation</p>
+        <h1 id="intro-title">Monica<br><em>Dessole.</em></h1>
+        <p class="hero-role">Researcher in high-performance<br class="desktop-break"> scientific computing</p>
+        <p class="hero-description">Turning mathematical ideas into scalable computation. I develop numerical algorithms and scientific software for complex problems.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#research">Explore my work <span aria-hidden="true">↘</span></a>
+          <a class="text-link" href="pdfs/cv_dessole.pdf">Curriculum vitae <span aria-hidden="true">↗</span></a>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div id="box">
-        <h3>Short Bio</h3>
-
-        <p align="justify">
-          I received my PhD in Computational Mathematics at the
-          <a href="https://www.unipd.it/en/">University of Padova</a>, where I
-          also held a one year research fellowship year at the
-          <a href="https://www.dei.unipd.it/">Department of Information Engineering</a>. 
-          I am currently developing a multi-gpu framework for a 3D finite difference 
-          underwater acoustic solver solver for sonar applications. Before joining 
-          NATO CMRE, I was part of the ROOT team at CERN developing the <a href="https://root.cern/">ROOT library</a>, an
-          open-source C++ fremework for high-energy physics analyses. Here, I 
-          worked on leveraging SYCL, an heterogeneous computing framework, in 
-          order to enable performance portability across multi vendor GPUs. 
-          Previously, I was part of the HPC/Cloud group at <a href="https://www.leonardo.com/it/innovation-technology/leonardo-labs/">Leonardo Labs</a>, 
-          where I was involved in the design and implementation of cloud
-          stacks for Big Data analytics. During my PhD, I have worked on the
-          massively parallel solution on GPUs of linear systems arising from
-          differential equations such as high-fidelity numerical simulations
-          of non-compressible unsteady Navier-Stokes equations and BVODE
-          problems. In particular, I have explored the performance attained by
-          the approximate iterative solution on GPUs of sparse triangular
-          linear systems in the context of ILU preconditioning with
-          application to non-miscible dual fluid flow simulations. Moreover, I
-          developed a direct GPU solver tailored for structured matrices
-          arising e.g. from the discretization of two point boundary value
-          problems. I have also dealt with the efficient solution of ill-posed
-          problems my means of low-rank models and statistical techniques with
-          application to analysis of datasets in high dimensional spaces. I
-          developed a block pivoting technique which can be adopted to
-          increase performance in rank deficient QR computations and in sparse
-          recovery problems.
-        </p>
-        <p>
-          For further information please check out my
-          <a href="pdfs/cv_dessole.pdf"> cv</a>.
-        </p>
-
-        <h3>Teaching</h3>
-        <a href="https://learn.eduopen.org/eduopenv2/pathway_details.php?specialid=57">
-          MOOC: Scientific Computing in Python</a>
-        (in Italian) <br />
-        <a href="https://mediaspace.unipd.it/channel/Introduction%2Bto%2BPython%2B-%2Beng/184952523">
-          Introduction to Python</a>
-        (<a href="https://mediaspace.unipd.it/channel/Introduzione%2Ba%2B%2BPython/201269943">
-          Italian version</a>
-        )
-        <br />
-        <h3>Software</h3>
-        <a href="https://github.com/mdessole/lhdm"> LHDM</a> - Active-set
-        solver for NonNegative Least Squares based on Deviation Maximization
-        column selection <br />
-        <a href="https://github.com/mdessole/qrdm"> QRDM</a> - QR
-        factorization for rank-deficient matrices based on Deviation
-        Maximization column selection <br />
-        <a href="https://www.math.unipd.it/~marcov/dCATCH.html"> dCATCH</a> -
-        Nearly-optimal polynomial regression designs on high-dimentional point
-        clouds <br />
-        <a href="https://github.com/mdessole/parasof"> PARASOF</a> - Direct
-        GPU solver for linear systems with BABD structure <br />
-        <a href="https://github.com/mdessole/ns2div"> ns2div</a> - Hybrid
-        CPU-GPU solver for Navier-Stokes equations with variable density
-
-        <h3>Publications</h3>
-        <h4>Preprints</h4>
-        <div id="publications-row" class="row">
-          <ul class="publications-list">
-            <li>
-              <div class="paper">
-                <div class="paper-author">M. Dessole, J. Chen, A. Naumann</div>
-                <div class="paper-title">
-                  GenVectorX: A performance-portable SYCL library for Lorentz Vectors operations
-                </div>
-                <div class="paper-journal">
-                  ArXiv Preprint, 2023
-                </div>
-                <div class="paper-links">
-                  [
-                  <a role="button" href="https://arxiv.org/abs/2312.02756">link</a>
-                  ]
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <h4>Conference Papers</h4>
-        <div id="publications-row" class="row">
-          <ul class="publications-list">
-            <li>
-              <div class="paper">
-                <div class="paper-author">J. Chen, M. Dessole, A.L. Varbanescu </div>
-                <div class="paper-title">
-                  Migrating CUDA to SYCL: A HEP Case Study with ROOT RDataFrame
-                </div>
-                <div class="paper-journal">
-                  IWOCL '24: Proceedings of the 12th International Workshop on OpenCL and SYCL, 2024
-                </div>
-                <div class="paper-links">
-                  [
-                  <a role="button" href="https://dl.acm.org/doi/10.1145/3648115.3648122">link</a>
-                  ]
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <h4>Journal Papers</h4>
-        <div id="publications-row" class="row">
-          <ul class="publications-list">
-            <li>
-              <div class="paper">
-                <div class="paper-author">M. Dessole, F. Marcuzzi</div>
-                <div class="paper-title">
-                  Accurate detection of hidden material changes as fictitious
-                  heat sources from thermographic data
-                </div>
-                <div class="paper-journal">
-                  Numerical Heat Transfer, Part B: Fundamentals, 2023
-                </div>
-                <div class="paper-links">
-                  [
-                  <a role="button"
-                    href="https://www.tandfonline.com/doi/abs/10.1080/10407790.2023.2220905?journalCode=unhb20">link</a>
-                  ]
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="paper">
-                <div class="paper-author">
-                  M. Dessole, M. Dell’Orto, F. Marcuzzi
-                </div>
-                <div class="paper-title">
-                  The Lawson-Hanson Algorithm with Deviation Maximization:
-                  Finite Convergence and Sparse Recovery
-                </div>
-                <div class="paper-journal">
-                  Numerical Linear Algebra with Applications, 2023
-                </div>
-                <div class="paper-links">
-                  [
-                  <a role="button" href="https://onlinelibrary.wiley.com/doi/abs/10.1002/nla.2490">link</a>
-                  ]
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="paper">
-                <div class="paper-author">M. Dessole, F. Marcuzzi</div>
-                <div class="paper-title">
-                  Deviation Maximization for Rank-Revealing QR Factorizations
-                </div>
-                <div class="paper-journal">Numerical Algorithms, 2022.</div>
-                <div class="paper-links">
-                  [
-                  <a role="button" href="http://dx.doi.org/10.1007/s11075-022-01291-1">link</a>
-                  ]
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="paper">
-                <div class="paper-author">
-                  M. Dessole, F. Marcuzzi, M. Vianello
-                </div>
-                <div class="paper-title">
-                  dCATCH-A Numerical Package for d-Variate Near G-Optimal
-                  Tchakaloff Regression via Fast NNLS
-                </div>
-                <div class="paper-journal">Mathematics, 2020</div>
-                <div class="paper-links">
-                  [
-                  <a role="button" href="https://www.mdpi.com/2227-7390/8/7/1122">link</a>
-                  ]
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="paper">
-                <div class="paper-author">M. Dessole, F. Marcuzzi</div>
-                <div class="paper-title">
-                  A massively-parallel algorithm for Bordered Almost Block
-                  Diagonal systems on GPUs
-                </div>
-                <div class="paper-journal">Numerical Algorithms, 2020</div>
-                <div class="paper-links">
-                  [
-                  <a role="button" href="https://link.springer.com/article/10.1007/s11075-020-00931-8">link</a>
-                  ]
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="paper">
-                <div class="paper-author">
-                  M. Dessole, F. Marcuzzi, M. Vianello
-                </div>
-                <div class="paper-title">
-                  Accelerating the Lawson-Hanson NNLS solver for large-scale
-                  Tchakaloff regression designs
-                </div>
-                <div class="paper-journal">
-                  Dolomites Research Notes on Approximation, 2020
-                </div>
-                <div class="paper-links">
-                  [
-                  <a role="button" href="https://drna.padovauniversitypress.it/2020/1/3">link</a>
-                  ]
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="paper">
-                <div class="paper-author">M. Dessole, F. Marcuzzi</div>
-                <div class="paper-title">
-                  Fully iterative ILU preconditioning of the unsteady
-                  Navier-Stokes equations for GPGPU
-                </div>
-                <div class="paper-journal">
-                  Computers & Mathematics with Applications, 2019
-                </div>
-                <div class="paper-links">
-                  [
-                  <a role="button" href="https://www.sciencedirect.com/science/article/pii/S0898122118306345">link</a>
-                  ]
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <h4>PhD thesis</h4>
-        <div id="publications-row" class="row">
-          <ul class="publications-list">
-            <li>
-              <a href="pdfs/Topics_in_Numerical_Linear_Algebra_for_High_Performance_Computing.pdf">
-                Topics in Numerical Linear Algebra for High Performance
-                Computing</a>, University of Padova, 2022
-            </li>
-          </ul>
-        </div>
-
-        <p>
-          <script language="Javascript">
-            document.write(
-              "\nLast modified on: " + document.lastModified + " CET "
-            );
-          </script>
-        </p>
+      <figure class="portrait">
+        <div class="portrait-frame"><img src="images/IMG_9995.JPG" alt="Monica Dessole" width="458" height="640" fetchpriority="high"></div>
+        <figcaption><span class="caption-rule" aria-hidden="true"></span> Curious by nature. Computational by training.</figcaption>
+      </figure>
+      <div class="hero-bottom">
+        <span>Numerical linear algebra <span class="separator" aria-hidden="true">/</span> GPU computing <span class="separator" aria-hidden="true">/</span> Scientific software</span>
+        <a href="#research" class="scroll-link">A little more about me <span aria-hidden="true">↓</span></a>
       </div>
-    </div>
+    </section>
+    <section id="research" class="section wrap" aria-labelledby="research-title">
+      <div class="section-heading"><p class="eyebrow">01 / Research &amp; background</p><h2 id="research-title">From theory<br> to <em>computation.</em></h2></div>
+      <div class="section-content">
+        <p class="intro-text">My work sits at the intersection of numerical mathematics and high-performance computing.</p>
+        <p>I am a visiting researcher at the <a href="https://www.cmre.nato.int/">NATO Centre for Maritime Research and Experimentation (CMRE)</a>.</p>
+        <p>I focus on numerical and computational linear algebra: efficient algorithms, parallel solvers for differential equations, and methods for analyzing large matrices and datasets. I care about scientific software that is scalable, reusable, and maintainable.</p>
+        <p>I received my PhD in Computational Mathematics from the <a href="https://www.unipd.it/en/">University of Padova</a>, where I also held a research fellowship at the <a href="https://www.dei.unipd.it/">Department of Information Engineering</a>. My experience includes the <a href="https://root.cern/">ROOT team at CERN</a>, working on performance portability with SYCL, and the HPC/Cloud group at <a href="https://www.leonardo.com/it/innovation-technology/leonardo-labs/">Leonardo Labs</a>, developing cloud stacks for Big Data analytics.</p>
+        <div class="research-topics">
+          <article><span class="topic-number">01</span><h3>Numerical linear algebra</h3><p>Rank-revealing factorizations, sparse recovery, low-rank models, and nonnegative least squares.</p></article>
+          <article><span class="topic-number">02</span><h3>Parallel computing</h3><p>GPU algorithms, structured linear systems, and performance portability across hardware.</p></article>
+          <article><span class="topic-number">03</span><h3>Scientific simulation</h3><p>Scalable solvers for differential equations, preconditioning, and numerical fluid simulations.</p></article>
+        </div>
+        <a class="text-link" href="pdfs/cv_dessole.pdf">More about my background <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+    <section id="software" class="software-section" aria-labelledby="software-title">
+      <div class="wrap">
+        <div class="section-topline"><div><p class="eyebrow">02 / Open-source software</p><h2 id="software-title">Ideas, <em>implemented.</em></h2></div><a class="text-link" href="https://github.com/mdessole">Find me on GitHub <span aria-hidden="true">↗</span></a></div>
+        <p class="section-description">Research tools built to make numerical methods useful.</p>
+        <div class="software-grid">
+          <a class="software-card" href="https://github.com/mdessole/lhdm"><div class="card-top"><span class="eyebrow">Optimization</span><span class="card-arrow" aria-hidden="true">↗</span></div><h3>LHDM</h3><p>An active-set solver for nonnegative least squares, using Deviation Maximization for column selection.</p><span class="card-label">Nonnegative least squares</span></a>
+          <a class="software-card" href="https://github.com/mdessole/qrdm"><div class="card-top"><span class="eyebrow">Linear algebra</span><span class="card-arrow" aria-hidden="true">↗</span></div><h3>QRDM</h3><p>QR factorization for rank-deficient matrices, based on Deviation Maximization column selection.</p><span class="card-label">Rank-revealing factorization</span></a>
+          <a class="software-card" href="https://www.math.unipd.it/~marcov/dCATCH.html"><div class="card-top"><span class="eyebrow">Approximation</span><span class="card-arrow" aria-hidden="true">↗</span></div><h3>dCATCH</h3><p>Nearly optimal polynomial regression designs on high-dimensional point clouds.</p><span class="card-label">Polynomial regression</span></a>
+          <a class="software-card" href="https://github.com/mdessole/parasof"><div class="card-top"><span class="eyebrow">GPU computing</span><span class="card-arrow" aria-hidden="true">↗</span></div><h3>PARASOF</h3><p>A direct GPU solver for linear systems with Bordered Almost Block Diagonal structure.</p><span class="card-label">Structured linear systems</span></a>
+          <a class="software-card" href="https://github.com/mdessole/ns2div"><div class="card-top"><span class="eyebrow">Fluid dynamics</span><span class="card-arrow" aria-hidden="true">↗</span></div><h3>ns2div</h3><p>A hybrid CPU–GPU solver for the Navier–Stokes equations with variable density.</p><span class="card-label">Numerical simulation</span></a>
+          <div class="software-note"><span class="note-symbol" aria-hidden="true">{ }</span><p>From a mathematical method<br>to a working implementation.</p><a class="text-link" href="https://github.com/mdessole">Explore the code <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </div>
+    </section>
+    <section id="publications" class="publications-section wrap" aria-labelledby="publications-title">
+      <div class="section-topline"><div><p class="eyebrow">03 / Publications</p><h2 id="publications-title">On <em>the record.</em></h2></div><a class="text-link" href="https://scholar.google.com/citations?user=I8B-4HIAAAAJ&amp;hl=it">Google Scholar <span aria-hidden="true">↗</span></a></div>
+      <div class="publication-tools" hidden>
+        <div class="publication-filters" role="group" aria-label="Filter publications by type">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="journal" aria-pressed="false">Journal articles</button>
+          <button type="button" data-filter="conference" aria-pressed="false">Conference papers</button>
+          <button type="button" data-filter="preprint" aria-pressed="false">Preprints</button>
+          <button type="button" data-filter="thesis" aria-pressed="false">Thesis</button>
+        </div>
+        <span id="publication-count" class="publication-count" role="status" aria-live="polite" aria-atomic="true">10 publications</span>
+      </div>
+      <ol class="publication-list">
+        <li class="publication" data-type="conference"><span class="paper-year">2024</span><div><span class="paper-type">Conference paper</span><h3><a href="https://dl.acm.org/doi/10.1145/3648115.3648122">Migrating CUDA to SYCL: A HEP Case Study with ROOT RDataFrame <span aria-hidden="true">↗</span></a></h3><p class="paper-authors">J. Chen, M. Dessole, A. L. Varbanescu</p><p class="paper-venue">IWOCL ’24 · 12th International Workshop on OpenCL and SYCL</p></div></li>
+        <li class="publication" data-type="preprint"><span class="paper-year">2023</span><div><span class="paper-type">Preprint</span><h3><a href="https://arxiv.org/abs/2312.02756">GenVectorX: A performance-portable SYCL library for Lorentz Vectors operations <span aria-hidden="true">↗</span></a></h3><p class="paper-authors">M. Dessole, J. Chen, A. Naumann</p><p class="paper-venue">arXiv</p></div></li>
+        <li class="publication" data-type="journal"><span class="paper-year">2023</span><div><span class="paper-type">Journal article</span><h3><a href="https://www.tandfonline.com/doi/abs/10.1080/10407790.2023.2220905?journalCode=unhb20">Accurate detection of hidden material changes as fictitious heat sources from thermographic data <span aria-hidden="true">↗</span></a></h3><p class="paper-authors">M. Dessole, F. Marcuzzi</p><p class="paper-venue">Numerical Heat Transfer, Part B: Fundamentals</p></div></li>
+        <li class="publication" data-type="journal"><span class="paper-year">2023</span><div><span class="paper-type">Journal article</span><h3><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/nla.2490">The Lawson-Hanson Algorithm with Deviation Maximization: Finite Convergence and Sparse Recovery <span aria-hidden="true">↗</span></a></h3><p class="paper-authors">M. Dessole, M. Dell’Orto, F. Marcuzzi</p><p class="paper-venue">Numerical Linear Algebra with Applications</p></div></li>
+        <li class="publication" data-type="journal"><span class="paper-year">2022</span><div><span class="paper-type">Journal article</span><h3><a href="https://doi.org/10.1007/s11075-022-01291-1">Deviation Maximization for Rank-Revealing QR Factorizations <span aria-hidden="true">↗</span></a></h3><p class="paper-authors">M. Dessole, F. Marcuzzi</p><p class="paper-venue">Numerical Algorithms</p></div></li>
+        <li class="publication" data-type="thesis"><span class="paper-year">2022</span><div><span class="paper-type">PhD thesis</span><h3><a href="pdfs/Topics_in_Numerical_Linear_Algebra_for_High_Performance_Computing.pdf">Topics in Numerical Linear Algebra for High Performance Computing <span aria-hidden="true">↗</span></a></h3><p class="paper-authors">Monica Dessole</p><p class="paper-venue">University of Padova · PDF</p></div></li>
+        <li class="publication" data-type="journal"><span class="paper-year">2020</span><div><span class="paper-type">Journal article</span><h3><a href="https://www.mdpi.com/2227-7390/8/7/1122">dCATCH-A Numerical Package for d-Variate Near G-Optimal Tchakaloff Regression via Fast NNLS <span aria-hidden="true">↗</span></a></h3><p class="paper-authors">M. Dessole, F. Marcuzzi, M. Vianello</p><p class="paper-venue">Mathematics</p></div></li>
+        <li class="publication" data-type="journal"><span class="paper-year">2020</span><div><span class="paper-type">Journal article</span><h3><a href="https://link.springer.com/article/10.1007/s11075-020-00931-8">A massively-parallel algorithm for Bordered Almost Block Diagonal systems on GPUs <span aria-hidden="true">↗</span></a></h3><p class="paper-authors">M. Dessole, F. Marcuzzi</p><p class="paper-venue">Numerical Algorithms</p></div></li>
+        <li class="publication" data-type="journal"><span class="paper-year">2020</span><div><span class="paper-type">Journal article</span><h3><a href="https://drna.padovauniversitypress.it/2020/1/3">Accelerating the Lawson-Hanson NNLS solver for large-scale Tchakaloff regression designs <span aria-hidden="true">↗</span></a></h3><p class="paper-authors">M. Dessole, F. Marcuzzi, M. Vianello</p><p class="paper-venue">Dolomites Research Notes on Approximation</p></div></li>
+        <li class="publication" data-type="journal"><span class="paper-year">2019</span><div><span class="paper-type">Journal article</span><h3><a href="https://www.sciencedirect.com/science/article/pii/S0898122118306345">Fully iterative ILU preconditioning of the unsteady Navier-Stokes equations for GPGPU <span aria-hidden="true">↗</span></a></h3><p class="paper-authors">M. Dessole, F. Marcuzzi</p><p class="paper-venue">Computers &amp; Mathematics with Applications</p></div></li>
+      </ol>
+    </section>
+    <section id="teaching" class="section teaching-section wrap" aria-labelledby="teaching-title">
+      <div class="section-heading"><p class="eyebrow">04 / Teaching</p><h2 id="teaching-title">Knowledge,<br> <em>shared.</em></h2></div>
+      <div class="section-content">
+        <p class="intro-text">An introduction to the tools behind scientific computing.</p>
+        <a class="course" href="https://learn.eduopen.org/eduopenv2/pathway_details.php?specialid=57"><div><span class="eyebrow">MOOC · In Italian</span><h3>Scientific Computing in Python</h3><p>Explore the course on EduOpen</p></div><span class="course-arrow" aria-hidden="true">↗</span></a>
+        <div class="course"><div><span class="eyebrow">Video lectures · English &amp; Italian</span><h3>Introduction to Python</h3><div class="course-links"><a href="https://mediaspace.unipd.it/channel/Introduction%2Bto%2BPython%2B-%2Beng/184952523">English lectures <span aria-hidden="true">↗</span></a><a href="https://mediaspace.unipd.it/channel/Introduzione%2Ba%2B%2BPython/201269943">Italian lectures <span aria-hidden="true">↗</span></a></div></div></div>
+      </div>
+    </section>
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
+      <div class="wrap contact-inner">
+        <div><p class="eyebrow">05 / Get in touch</p><h2 id="contact-title">Let’s <em>connect.</em></h2><p>For research conversations, scientific software, or a shared curiosity.</p><a class="contact-email" href="mailto:monicadessole@gmail.com">monicadessole@gmail.com <span aria-hidden="true">↗</span></a></div>
+        <div class="social-links" aria-label="Professional profiles"><a href="https://github.com/mdessole">GitHub <span aria-hidden="true">↗</span></a><a href="https://scholar.google.com/citations?user=I8B-4HIAAAAJ&amp;hl=it">Google Scholar <span aria-hidden="true">↗</span></a><a href="https://orcid.org/0000-0002-2727-9123">ORCID <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/monica-dessole-9a8097a0/">LinkedIn <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <footer class="site-footer wrap"><span>© <span id="year">2026</span> Monica Dessole</span><a href="#">Back to top <span aria-hidden="true">↑</span></a></footer>
+    </section>
   </main>
 </body>
-
 </html>

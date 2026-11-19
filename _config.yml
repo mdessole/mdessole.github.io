@@ -18,10 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Personal Webpage of Monica Dessole 
+title: Monica Dessole | Scientific Computing
 email: monicadessole@gmail.com
 description: >
-  PhD student in Applied Mathematics at University of Padova
+  Researcher in high-performance scientific computing, numerical linear algebra,
+  and GPU algorithms. Research, open-source software, and teaching.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mdessole.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: monicadessole
